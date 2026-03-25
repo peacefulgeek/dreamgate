@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "type": "module",
   "license": "MIT",
+  "author": "Dream Gate Editorial",
+  "homepage": "https://dreamgate.love",
   "scripts": {
     "dev": "vite --host",
     "build": "vite build && esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist",
-    "start": "NODE_ENV=production node dist/index.js",
+    "start": "NODE_ENV=production node scripts/start-with-cron.mjs",
     "preview": "vite preview --host",
     "check": "tsc --noEmit",
     "format": "prettier --write ."
