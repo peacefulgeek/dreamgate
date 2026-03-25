@@ -1,7 +1,7 @@
 import { useState, useMemo, useEffect } from "react";
 import Layout from "@/components/Layout";
 import ArticleCard from "@/components/ArticleCard";
-import { getPublishedArticles, getAllArticles, CATEGORIES, type ArticleMeta } from "@/lib/articles";
+import { getPublishedArticles, CATEGORIES, type ArticleMeta } from "@/lib/articles";
 import { Search } from "lucide-react";
 
 const ARTICLES_PER_PAGE = 12;
@@ -51,7 +51,7 @@ export default function ArticleIndex() {
           Article Archive
         </h1>
         <p className="text-muted-foreground mb-8">
-          {getAllArticles().length} articles and growing. Every one of them written to change how you
+          {allPublished.length} articles and growing. Every one of them written to change how you
           think about your dreams.
         </p>
 

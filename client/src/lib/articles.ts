@@ -77,7 +77,7 @@ export function getHeroImageUrl(articleId: number): string {
 
 /** Get OG image URL */
 export function getOgImageUrl(articleId: number): string {
-  return `${BUNNY_CDN_BASE}/og/article-${articleId}.png`;
+  return `${BUNNY_CDN_BASE}/og/article-${articleId}.webp`;
 }
 
 /** Format date for display */

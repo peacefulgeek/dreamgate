@@ -93,11 +93,12 @@ export default function ArticlePage() {
       "og:description": article.metaDescription,
       "og:type": "article",
       "og:url": `https://dreamgate.love/${article.slug}`,
-      "og:image": `https://dreamgate.b-cdn.net/og/article-${article.id}.png`,
+      "og:image": `https://dreamgate.b-cdn.net/og/article-${article.id}.webp`,
       "og:site_name": "Dream Gate",
       "twitter:card": "summary_large_image",
       "twitter:title": article.title,
       "twitter:description": article.metaDescription,
+      "twitter:image": `https://dreamgate.b-cdn.net/og/article-${article.id}.webp`,
     };
 
     const ogEls: HTMLMetaElement[] = [];
