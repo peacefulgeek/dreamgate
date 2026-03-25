@@ -233,6 +233,29 @@ export default function ArticlePage() {
           dangerouslySetInnerHTML={{ __html: article.body }}
         />
 
+        {/* Author bio sidebar */}
+        <aside className="my-12 p-6 rounded-xl bg-card border border-border/50 flex items-start gap-5">
+          <div className="w-14 h-14 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
+            <span className="font-heading text-xl font-bold text-primary">K</span>
+          </div>
+          <div>
+            <h3 className="font-heading text-lg font-semibold text-foreground mb-1">
+              Krishna — Mystic &amp; Spiritual Advisor
+            </h3>
+            <p className="text-sm text-muted-foreground leading-relaxed mb-2">
+              Thirty years navigating the territory between psychology and spirit. Dream work, consciousness exploration, and the kind of guidance that does not let you hide from yourself.
+            </p>
+            <a
+              href="https://shrikrishna.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-primary hover:underline font-body font-semibold"
+            >
+              ShriKrishna.com
+            </a>
+          </div>
+        </aside>
+
         {/* Newsletter CTA mid-article */}
         <div className="my-12 p-8 rounded-xl bg-card border border-border/50 text-center">
           <h3 className="font-heading text-xl font-semibold text-foreground mb-2">

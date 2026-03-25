@@ -72,6 +72,29 @@ export default function About() {
             even when it demands change — you are exactly where you need to be.
           </p>
 
+          {/* Advisor card */}
+          <div className="mt-10 p-6 rounded-xl bg-card border border-border/50 flex items-start gap-5">
+            <div className="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
+              <span className="font-heading text-2xl font-bold text-primary">K</span>
+            </div>
+            <div>
+              <h3 className="font-heading text-xl font-semibold text-foreground mb-1">
+                Krishna — Mystic &amp; Spiritual Advisor
+              </h3>
+              <p className="text-sm text-muted-foreground leading-relaxed mb-2">
+                Thirty years navigating the territory between psychology and spirit. Dream work, consciousness exploration, and the kind of guidance that does not let you hide from yourself.
+              </p>
+              <a
+                href="https://shrikrishna.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm text-primary hover:underline font-body font-semibold"
+              >
+                ShriKrishna.com
+              </a>
+            </div>
+          </div>
+
           <h2 className="font-heading text-2xl font-semibold text-foreground mt-10 mb-4">
             Connect
           </h2>

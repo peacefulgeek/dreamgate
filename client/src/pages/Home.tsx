@@ -7,9 +7,9 @@ import { websiteJsonLd, organizationJsonLd, subscribeActionJsonLd } from "@/lib/
 import { useEffect } from "react";
 import { quizzes } from "@/lib/quizzes";
 
-const HERO_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663309220512/dDXQvMVnPzczmp4yPQ4zre/dreamgate-hero-main_0bfc340d.png";
-const GARDEN_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663309220512/dDXQvMVnPzczmp4yPQ4zre/dreamgate-moonlit-garden_f8005aa9.png";
-const GEOMETRY_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663309220512/dDXQvMVnPzczmp4yPQ4zre/dreamgate-sacred-geometry_ff9dd2de.png";
+const HERO_IMG = "https://dreamgate.b-cdn.net/images/dreamgate-hero-main.png";
+const GARDEN_IMG = "https://dreamgate.b-cdn.net/images/dreamgate-moonlit-garden.png";
+const GEOMETRY_IMG = "https://dreamgate.b-cdn.net/images/dreamgate-sacred-geometry.png";
 
 export default function Home() {
   const published = getPublishedArticles();

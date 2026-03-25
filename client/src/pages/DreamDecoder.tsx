@@ -4,7 +4,7 @@ import ArticleCard from "@/components/ArticleCard";
 import { searchArticles, getPublishedArticles, type ArticleMeta } from "@/lib/articles";
 import { Search, Sparkles } from "lucide-react";
 
-const SLEEPING_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663309220512/dDXQvMVnPzczmp4yPQ4zre/dreamgate-sleeping-light_3ce26336.png";
+const SLEEPING_IMG = "https://dreamgate.b-cdn.net/images/dreamgate-sleeping-light.png";
 
 // Dream symbol keyword map for matching
 const SYMBOL_KEYWORDS: Record<string, string[]> = {

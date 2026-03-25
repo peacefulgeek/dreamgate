@@ -1,5 +1,5 @@
 import { Link, useLocation } from "wouter";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Menu, X, Search, Moon } from "lucide-react";
 import { CATEGORIES } from "@/lib/articles";
 import NewsletterSignup from "./NewsletterSignup";
@@ -7,6 +7,17 @@ import NewsletterSignup from "./NewsletterSignup";
 export default function Layout({ children }: { children: React.ReactNode }) {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [location] = useLocation();
+  const [showCookieBanner, setShowCookieBanner] = useState(false);
+
+  useEffect(() => {
+    const accepted = localStorage.getItem("dg-cookie-consent");
+    if (!accepted) setShowCookieBanner(true);
+  }, []);
+
+  const acceptCookies = () => {
+    localStorage.setItem("dg-cookie-consent", "accepted");
+    setShowCookieBanner(false);
+  };
 
   return (
     <div className="min-h-screen flex flex-col bg-background text-foreground">
@@ -215,6 +226,27 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           </div>
         </div>
       </footer>
+
+      {/* Cookie consent banner */}
+      {showCookieBanner && (
+        <div className="fixed bottom-0 inset-x-0 z-50 p-4 bg-card border-t border-border/50 shadow-lg">
+          <div className="container flex flex-col sm:flex-row items-center justify-between gap-3">
+            <p className="text-sm text-muted-foreground">
+              This site uses essential cookies for functionality. No tracking cookies are used.
+              See our{" "}
+              <Link href="/privacy" className="text-primary hover:underline">
+                Privacy Policy
+              </Link>.
+            </p>
+            <button
+              onClick={acceptCookies}
+              className="px-5 py-2 text-sm font-body font-semibold rounded-lg bg-primary text-primary-foreground hover:opacity-90 transition-opacity flex-shrink-0"
+            >
+              Accept
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

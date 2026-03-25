@@ -3,7 +3,7 @@ import Layout from "@/components/Layout";
 import { quizzes } from "@/lib/quizzes";
 import { Link } from "wouter";
 
-const WATER_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663309220512/dDXQvMVnPzczmp4yPQ4zre/dreamgate-starlit-water_6990577b.png";
+const WATER_IMG = "https://dreamgate.b-cdn.net/images/dreamgate-starlit-water.png";
 
 export default function QuizIndex() {
   useEffect(() => {
