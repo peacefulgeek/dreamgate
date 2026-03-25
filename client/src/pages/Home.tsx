@@ -25,7 +25,7 @@ export default function Home() {
       meta.setAttribute("name", "description");
       document.head.appendChild(meta);
     }
-    meta.setAttribute("content", "Dream interpretation through spiritual, psychological, and somatic dimensions. Explore 300+ articles on what your dreams are actually trying to tell you.");
+    meta.setAttribute("content", `Dream interpretation through spiritual, psychological, and somatic dimensions. Explore dream interpretation articles on what your dreams are actually trying to tell you.`);
 
     // JSON-LD
     const scripts = [websiteJsonLd(), organizationJsonLd(), subscribeActionJsonLd()];
