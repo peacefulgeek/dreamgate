@@ -12,7 +12,7 @@ export default function ArticleCard({ article, variant = "default" }: Props) {
 
   if (variant === "featured") {
     return (
-      <Link href={`/${article.slug}`} className="group block no-underline">
+      <Link href={`/article/${article.slug}`} className="group block no-underline">
         <article className="relative overflow-hidden rounded-xl bg-card border border-border/50 hover:border-primary/30 transition-all duration-300">
           <div className="aspect-[16/9] overflow-hidden bg-secondary">
             <img
@@ -51,7 +51,7 @@ export default function ArticleCard({ article, variant = "default" }: Props) {
 
   if (variant === "compact") {
     return (
-      <Link href={`/${article.slug}`} className="group block no-underline">
+      <Link href={`/article/${article.slug}`} className="group block no-underline">
         <article className="flex gap-4 py-3 border-b border-border/30 last:border-0">
           <div className="flex-1">
             <span className="text-xs font-body font-semibold uppercase tracking-wider text-primary">
@@ -70,7 +70,7 @@ export default function ArticleCard({ article, variant = "default" }: Props) {
   }
 
   return (
-    <Link href={`/${article.slug}`} className="group block no-underline">
+    <Link href={`/article/${article.slug}`} className="group block no-underline">
       <article className="overflow-hidden rounded-lg bg-card border border-border/50 hover:border-primary/30 transition-all duration-300 h-full flex flex-col">
         <div className="aspect-[16/10] overflow-hidden bg-secondary">
           <img

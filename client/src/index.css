@@ -160,7 +160,12 @@
     }
   }
 
-  /* Article body styling */
+  /* Article body — single column editorial typography */
+  .article-body {
+    font-size: 20px;
+    line-height: 1.8;
+  }
+
   .article-body h2 {
     font-family: 'Cormorant Infant', Georgia, serif;
     font-size: 1.75rem;
@@ -182,7 +187,7 @@
 
   .article-body p {
     margin-bottom: 1.5em;
-    line-height: 1.7;
+    line-height: 1.8;
   }
 
   .article-body blockquote {
@@ -218,10 +223,4 @@
   .article-body li {
     margin-bottom: 0.5em;
   }
-
-  /* Golden doorway glow effect */
-  .glow-gold {
-    box-shadow: 0 0 30px oklch(0.72 0.12 85 / 0.3), 0 0 60px oklch(0.72 0.12 85 / 0.1);
-  }
 }
-/* Dreamgate v2 - 300 article images on Bunny CDN */

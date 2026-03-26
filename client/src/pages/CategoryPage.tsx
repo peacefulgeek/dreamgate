@@ -1,8 +1,7 @@
-import { useParams } from "wouter";
+import { useParams, Link } from "wouter";
 import { useEffect, useMemo } from "react";
 import Layout from "@/components/Layout";
-import ArticleCard from "@/components/ArticleCard";
-import { getArticlesByCategory, CATEGORIES } from "@/lib/articles";
+import { getArticlesByCategory, CATEGORIES, formatDate } from "@/lib/articles";
 import { collectionPageJsonLd, breadcrumbJsonLd } from "@/lib/seo";
 
 const CATEGORY_DESCRIPTIONS: Record<string, string> = {
@@ -53,7 +52,7 @@ export default function CategoryPage() {
   if (!category) {
     return (
       <Layout>
-        <div className="container py-20 text-center">
+        <div className="max-w-[720px] mx-auto px-5 py-20 text-center">
           <h1 className="font-heading text-3xl font-bold text-foreground">
             Category not found
           </h1>
@@ -64,26 +63,39 @@ export default function CategoryPage() {
 
   return (
     <Layout>
-      <div className="container py-16">
-        <h1 className="font-heading text-4xl font-bold text-foreground mb-2">
+      <div className="max-w-[720px] mx-auto px-5 py-16">
+        <h1 className="font-heading text-2xl font-bold text-foreground mb-2">
           {category.name}
         </h1>
-        <p className="text-muted-foreground max-w-2xl mb-10">
+        <p className="text-muted-foreground text-sm mb-8">
           {CATEGORY_DESCRIPTIONS[category.slug] || ""}
         </p>
 
         {articles.length > 0 ? (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="space-y-0">
             {articles.map((a) => (
-              <ArticleCard key={a.id} article={a} />
+              <Link
+                key={a.id}
+                href={`/article/${a.slug}`}
+                className="flex flex-col sm:flex-row sm:items-center justify-between py-4 border-b border-border/30 no-underline group"
+              >
+                <div className="flex-1 min-w-0">
+                  <h2 className="text-base font-medium text-foreground group-hover:text-primary transition-colors leading-snug">
+                    {a.title}
+                  </h2>
+                </div>
+                <div className="flex items-center gap-3 text-xs text-muted-foreground mt-1 sm:mt-0 sm:ml-4 flex-shrink-0">
+                  <span>{a.readingTime} min</span>
+                  <span>&middot;</span>
+                  <span>{formatDate(a.dateISO)}</span>
+                </div>
+              </Link>
             ))}
           </div>
         ) : (
-          <div className="text-center py-20">
-            <p className="text-muted-foreground text-lg">
-              Articles in this category are coming soon. The threshold is being prepared.
-            </p>
-          </div>
+          <p className="text-muted-foreground text-center py-20">
+            Articles in this category are coming soon.
+          </p>
         )}
       </div>
     </Layout>

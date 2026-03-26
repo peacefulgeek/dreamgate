@@ -11,7 +11,7 @@ export function articleJsonLd(article: ArticleFull): string {
     "@type": "Article",
     headline: article.title,
     description: article.metaDescription,
-    author: { "@type": "Person", name: "Krishna" },
+    author: { "@type": "Person", name: "Kalesh" },
     publisher: {
       "@type": "Organization",
       name: SITE_NAME,
@@ -21,7 +21,7 @@ export function articleJsonLd(article: ArticleFull): string {
     dateModified: article.dateISO,
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `${SITE_URL}/${article.slug}`,
+      "@id": `${SITE_URL}/article/${article.slug}`,
     },
     image: `https://dreamgate.b-cdn.net/heroes/article-${article.id}.webp`,
     wordCount: article.wordCount,
@@ -72,7 +72,7 @@ export function breadcrumbJsonLd(
   return JSON.stringify(schema);
 }
 
-/** Generate Organization JSON-LD (no founder) */
+/** Generate Organization JSON-LD */
 export function organizationJsonLd(): string {
   const schema = {
     "@context": "https://schema.org",
@@ -85,21 +85,13 @@ export function organizationJsonLd(): string {
   return JSON.stringify(schema);
 }
 
-/** Generate WebSite + SearchAction JSON-LD */
+/** Generate WebSite JSON-LD (no SearchAction — search not in scope) */
 export function websiteJsonLd(): string {
   const schema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
     name: SITE_NAME,
     url: SITE_URL,
-    potentialAction: {
-      "@type": "SearchAction",
-      target: {
-        "@type": "EntryPoint",
-        urlTemplate: `${SITE_URL}/articles?q={search_term_string}`,
-      },
-      "query-input": "required name=search_term_string",
-    },
   };
   return JSON.stringify(schema);
 }
@@ -122,7 +114,7 @@ export function collectionPageJsonLd(
       itemListElement: articles.slice(0, 10).map((a, i) => ({
         "@type": "ListItem",
         position: i + 1,
-        url: `${SITE_URL}/${a.slug}`,
+        url: `${SITE_URL}/article/${a.slug}`,
         name: a.title,
       })),
     },
@@ -137,11 +129,11 @@ export function aboutPersonJsonLd(): string {
     "@type": "ProfilePage",
     mainEntity: {
       "@type": "Person",
-      name: "Krishna",
-      jobTitle: "Spiritual Advisor",
-      url: "https://shrikrishna.com",
+      name: "Kalesh",
+      jobTitle: "Consciousness Teacher & Writer",
+      url: "https://kalesh.love",
       description:
-        "Mystic and spiritual advisor guiding seekers through dream interpretation, consciousness exploration, and inner transformation.",
+        "Consciousness teacher and writer exploring the intersection of ancient contemplative traditions and modern neuroscience.",
     },
   };
   return JSON.stringify(schema);

@@ -6,7 +6,6 @@ import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import { lazy, Suspense } from "react";
 
-// Lazy load pages for code splitting
 const Home = lazy(() => import("@/pages/Home"));
 const ArticlePage = lazy(() => import("@/pages/ArticlePage"));
 const ArticleIndex = lazy(() => import("@/pages/ArticleIndex"));
@@ -22,8 +21,8 @@ function LoadingFallback() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-background">
       <div className="text-center">
-        <div className="w-8 h-8 border-2 border-primary border-t-transparent rounded-full animate-spin mx-auto mb-4" />
-        <p className="text-muted-foreground font-body text-sm">Crossing the threshold...</p>
+        <div className="w-6 h-6 border-2 border-primary border-t-transparent rounded-full animate-spin mx-auto mb-4" />
+        <p className="text-muted-foreground text-sm">Loading...</p>
       </div>
     </div>
   );
@@ -42,8 +41,7 @@ function Router() {
         <Route path="/about" component={About} />
         <Route path="/privacy" component={Privacy} />
         <Route path="/terms" component={Terms} />
-        {/* Article routes — must be last since they match /:slug */}
-        <Route path="/:slug" component={ArticlePage} />
+        <Route path="/article/:slug" component={ArticlePage} />
         <Route component={NotFound} />
       </Switch>
     </Suspense>

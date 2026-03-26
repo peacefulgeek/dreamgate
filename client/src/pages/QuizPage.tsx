@@ -119,7 +119,7 @@ export default function QuizPage() {
                 {result.articles.map((slug) => (
                   <Link
                     key={slug}
-                    href={`/${slug}`}
+                    href={`/article/${slug}`}
                     className="flex items-center justify-between p-4 rounded-lg bg-card border border-border/50 hover:border-primary/40 transition-all no-underline group"
                   >
                     <span className="text-sm text-foreground group-hover:text-primary transition-colors font-body">

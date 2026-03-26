@@ -1,140 +1,109 @@
 import { useState, useMemo, useEffect } from "react";
+import { Link } from "wouter";
 import Layout from "@/components/Layout";
-import ArticleCard from "@/components/ArticleCard";
-import { getPublishedArticles, CATEGORIES, type ArticleMeta } from "@/lib/articles";
-import { Search } from "lucide-react";
+import { getPublishedArticles, CATEGORIES, formatDate } from "@/lib/articles";
 
-const ARTICLES_PER_PAGE = 12;
+const PER_PAGE = 20;
 
 export default function ArticleIndex() {
-  const [search, setSearch] = useState("");
-  const [activeCategory, setActiveCategory] = useState<string | null>(null);
   const [page, setPage] = useState(1);
+  const [categoryFilter, setCategoryFilter] = useState<string | null>(null);
 
-  const allPublished = useMemo(() => getPublishedArticles(), []);
+  const published = useMemo(() => getPublishedArticles(), []);
+
+  useEffect(() => {
+    document.title = "Articles — Dream Gate";
+    let meta = document.querySelector('meta[name="description"]');
+    if (!meta) { meta = document.createElement("meta"); meta.setAttribute("name", "description"); document.head.appendChild(meta); }
+    meta.setAttribute("content", `Browse ${published.length} dream interpretation articles on Dream Gate.`);
+  }, [published.length]);
 
   const filtered = useMemo(() => {
-    let result = allPublished;
-    if (activeCategory) {
-      result = result.filter((a) => a.category === activeCategory);
-    }
-    if (search.trim()) {
-      const q = search.toLowerCase().trim();
-      result = result.filter(
-        (a) =>
-          a.title.toLowerCase().includes(q) ||
-          a.metaDescription.toLowerCase().includes(q) ||
-          a.categoryName.toLowerCase().includes(q)
-      );
-    }
-    return result;
-  }, [allPublished, activeCategory, search]);
+    if (!categoryFilter) return published;
+    return published.filter((a) => a.category === categoryFilter);
+  }, [published, categoryFilter]);
 
-  const totalPages = Math.ceil(filtered.length / ARTICLES_PER_PAGE);
-  const paginated = filtered.slice(
-    (page - 1) * ARTICLES_PER_PAGE,
-    page * ARTICLES_PER_PAGE
-  );
+  const totalPages = Math.ceil(filtered.length / PER_PAGE);
+  const paginated = filtered.slice((page - 1) * PER_PAGE, page * PER_PAGE);
 
-  useEffect(() => {
-    setPage(1);
-  }, [search, activeCategory]);
-
-  useEffect(() => {
-    document.title = "All Articles — Dream Gate";
-  }, []);
+  useEffect(() => { setPage(1); }, [categoryFilter]);
 
   return (
     <Layout>
-      <div className="container py-16">
-        <h1 className="font-heading text-4xl font-bold text-foreground mb-2">
-          Article Archive
+      <div className="max-w-[720px] mx-auto px-5 py-12">
+        <h1 className="font-heading text-2xl font-bold text-foreground mb-2">
+          Articles
         </h1>
-        <p className="text-muted-foreground mb-8">
-          {allPublished.length} articles and growing. Every one of them written to change how you
-          think about your dreams.
+        <p className="text-sm text-muted-foreground mb-8">
+          {filtered.length} article{filtered.length !== 1 ? "s" : ""}
+          {categoryFilter ? ` in ${CATEGORIES.find(c => c.slug === categoryFilter)?.name}` : ""}
         </p>
 
-        {/* Search */}
-        <div className="relative max-w-md mb-8">
-          <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
-          <input
-            type="text"
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-            placeholder="Search articles..."
-            className="w-full pl-10 pr-4 py-2.5 rounded-lg bg-input border border-border text-foreground placeholder:text-muted-foreground text-sm focus:outline-none focus:ring-2 focus:ring-primary/50"
-          />
-        </div>
-
-        {/* Category filters */}
-        <div className="flex flex-wrap gap-2 mb-10">
+        {/* Category filter — text links */}
+        <div className="flex flex-wrap items-center gap-3 mb-8 text-sm">
           <button
-            onClick={() => setActiveCategory(null)}
-            className={`px-4 py-1.5 rounded-full text-sm font-body transition-colors ${
-              !activeCategory
-                ? "bg-primary text-primary-foreground"
-                : "bg-secondary text-secondary-foreground hover:bg-secondary/80"
-            }`}
+            onClick={() => setCategoryFilter(null)}
+            className={`transition-colors ${!categoryFilter ? "text-foreground font-medium" : "text-muted-foreground hover:text-foreground"}`}
           >
             All
           </button>
           {CATEGORIES.map((cat) => (
             <button
               key={cat.slug}
-              onClick={() =>
-                setActiveCategory(activeCategory === cat.slug ? null : cat.slug)
-              }
-              className={`px-4 py-1.5 rounded-full text-sm font-body transition-colors ${
-                activeCategory === cat.slug
-                  ? "bg-primary text-primary-foreground"
-                  : "bg-secondary text-secondary-foreground hover:bg-secondary/80"
-              }`}
+              onClick={() => setCategoryFilter(cat.slug)}
+              className={`transition-colors ${categoryFilter === cat.slug ? "text-foreground font-medium" : "text-muted-foreground hover:text-foreground"}`}
             >
               {cat.name}
             </button>
           ))}
         </div>
 
-        {/* Results count */}
-        <p className="text-sm text-muted-foreground mb-6">
-          Showing {paginated.length} of {filtered.length} articles
-          {activeCategory && ` in ${CATEGORIES.find((c) => c.slug === activeCategory)?.name}`}
-          {search && ` matching "${search}"`}
-        </p>
+        {/* Article list — simple rows */}
+        <div className="space-y-0">
+          {paginated.map((article) => (
+            <Link
+              key={article.id}
+              href={`/article/${article.slug}`}
+              className="flex flex-col sm:flex-row sm:items-center justify-between py-4 border-b border-border/30 no-underline group"
+            >
+              <div className="flex-1 min-w-0">
+                <h2 className="text-base font-medium text-foreground group-hover:text-primary transition-colors leading-snug">
+                  {article.title}
+                </h2>
+              </div>
+              <div className="flex items-center gap-3 text-xs text-muted-foreground mt-1 sm:mt-0 sm:ml-4 flex-shrink-0">
+                <span>{article.categoryName}</span>
+                <span>&middot;</span>
+                <span>{article.readingTime} min</span>
+                <span>&middot;</span>
+                <span>{formatDate(article.dateISO)}</span>
+              </div>
+            </Link>
+          ))}
+        </div>
 
-        {/* Grid */}
-        {paginated.length > 0 ? (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {paginated.map((a) => (
-              <ArticleCard key={a.id} article={a} />
-            ))}
-          </div>
-        ) : (
-          <div className="text-center py-20">
-            <p className="text-muted-foreground text-lg">
-              No articles found. Try a different search or category.
-            </p>
-          </div>
+        {/* Empty state */}
+        {paginated.length === 0 && (
+          <p className="text-muted-foreground text-center py-12">No articles found in this category.</p>
         )}
 
         {/* Pagination */}
         {totalPages > 1 && (
-          <div className="flex items-center justify-center gap-2 mt-12">
+          <div className="flex items-center justify-center gap-4 mt-10 text-sm">
             <button
               onClick={() => setPage(Math.max(1, page - 1))}
               disabled={page === 1}
-              className="px-4 py-2 rounded-lg text-sm font-body bg-secondary text-secondary-foreground hover:bg-secondary/80 disabled:opacity-40 transition-colors"
+              className="text-muted-foreground hover:text-foreground disabled:opacity-30 transition-colors"
             >
               Previous
             </button>
-            <span className="text-sm text-muted-foreground px-4">
-              Page {page} of {totalPages}
+            <span className="text-muted-foreground">
+              {page} of {totalPages}
             </span>
             <button
               onClick={() => setPage(Math.min(totalPages, page + 1))}
               disabled={page === totalPages}
-              className="px-4 py-2 rounded-lg text-sm font-body bg-secondary text-secondary-foreground hover:bg-secondary/80 disabled:opacity-40 transition-colors"
+              className="text-muted-foreground hover:text-foreground disabled:opacity-30 transition-colors"
             >
               Next
             </button>

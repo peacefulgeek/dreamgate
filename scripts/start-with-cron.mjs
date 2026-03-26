@@ -1,7 +1,7 @@
 // ═══════════════════════════════════════════════════════════════
 // DREAMGATE — Start With Cron
 // Spawns the web server AND the cron worker together.
-// Railway startCommand: NODE_ENV=production node scripts/start-with-cron.mjs
+// Render startCommand: NODE_ENV=production node scripts/start-with-cron.mjs
 // ═══════════════════════════════════════════════════════════════
 
 import { spawn } from 'node:child_process';

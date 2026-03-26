@@ -1,7 +1,7 @@
 // ═══════════════════════════════════════════════════════════════
 // DREAMGATE — Auto-Gen Article Pipeline
 // Calls Anthropic (Claude), FAL.ai, Bunny CDN, GitHub DIRECTLY.
-// Zero Manus. Zero database. Zero email sending.
+// Zero database. Zero email sending.
 // ═══════════════════════════════════════════════════════════════
 
 // ─── FEATURE FLAG (stays in code — not a secret) ───
@@ -23,8 +23,8 @@ const GITHUB_REPO = "peacefulgeek/dreamgate";
 const SITE_NAME = "Dream Gate";
 const SITE_DOMAIN = "dreamgate.love";
 const SITE_EDITORIAL = "Dream Gate Editorial";
-const ADVISOR_NAME = "Krishna";
-const ADVISOR_URL = "https://shrikrishna.com";
+const ADVISOR_NAME = "Kalesh";
+const ADVISOR_URL = "https://kalesh.love";
 
 const CATEGORIES = [
   { slug: "the-language", name: "The Language" },
@@ -109,7 +109,7 @@ async function main() {
 
     // 3. Pick link type based on distribution (23% SK / 42% external / 35% internal)
     const rand = Math.random();
-    const linkType = rand < 0.23 ? 'shrikrishna' : rand < 0.65 ? 'external' : 'internal';
+    const linkType = rand < 0.23 ? 'kalesh' : rand < 0.65 ? 'external' : 'internal';
 
     // 4. Pick named reference
     const namedRef = NAMED_REFERENCES[Math.floor(Math.random() * NAMED_REFERENCES.length)];
@@ -194,7 +194,7 @@ STRUCTURE:
 - All links as <a href> tags, never markdown
 - ${faqCount} FAQ items at the end (if > 0), each with unique questions
 - 3-5 internal cross-links to other articles on this site
-${linkType === 'shrikrishna' ? `- 1-2 editorial links to ${ADVISOR_URL} with varied, topical anchor text. NO rel, NO target attributes.` : ''}
+${linkType === 'kalesh' ? `- 1-2 editorial links to ${ADVISOR_URL} with varied, topical anchor text. NO rel, NO target attributes.` : ''}
 ${linkType === 'external' ? `- 1-2 links to ${externalSite} with rel="nofollow"` : ''}
 - Internal links format: <a href="/${'{slug}'}">anchor text</a>
 - 30% spiritual/healing threads woven throughout

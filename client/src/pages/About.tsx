@@ -14,8 +14,8 @@ export default function About() {
 
   return (
     <Layout>
-      <div className="container max-w-3xl py-16">
-        <h1 className="font-heading text-4xl font-bold text-foreground mb-8">
+      <div className="max-w-[720px] mx-auto px-5 py-16">
+        <h1 className="font-heading text-3xl font-bold text-foreground mb-8">
           About Dream Gate
         </h1>
 
@@ -36,7 +36,7 @@ export default function About() {
             mind finally shuts up.
           </p>
 
-          <h2 className="font-heading text-2xl font-semibold text-foreground mt-10 mb-4">
+          <h2 className="font-heading text-xl font-semibold text-foreground mt-10 mb-4">
             The Approach
           </h2>
 
@@ -54,7 +54,7 @@ export default function About() {
             your specific life, at this specific moment, is actually trying to communicate.
           </p>
 
-          <h2 className="font-heading text-2xl font-semibold text-foreground mt-10 mb-4">
+          <h2 className="font-heading text-xl font-semibold text-foreground mt-10 mb-4">
             The Voice
           </h2>
 
@@ -72,45 +72,41 @@ export default function About() {
             even when it demands change — you are exactly where you need to be.
           </p>
 
-          {/* Advisor card */}
-          <div className="mt-10 p-6 rounded-xl bg-card border border-border/50 flex items-start gap-5">
-            <div className="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
-              <span className="font-heading text-2xl font-bold text-primary">K</span>
-            </div>
-            <div>
-              <h3 className="font-heading text-xl font-semibold text-foreground mb-1">
-                Krishna — Mystic &amp; Spiritual Advisor
-              </h3>
-              <p className="text-sm text-muted-foreground leading-relaxed mb-2">
-                Thirty years navigating the territory between psychology and spirit. Dream work, consciousness exploration, and the kind of guidance that does not let you hide from yourself.
-              </p>
+          {/* Kalesh bio — inline, not a card */}
+          <hr className="border-border/40 my-10" />
+
+          <div>
+            <h2 className="font-heading text-xl font-semibold text-foreground mb-4">
+              About Kalesh
+            </h2>
+            <p className="text-foreground/90 leading-relaxed">
+              Kalesh is a consciousness teacher and writer whose work explores the intersection
+              of ancient contemplative traditions and modern neuroscience. With decades of
+              practice in meditation, breathwork, and somatic inquiry, he guides others toward
+              embodied awareness.{" "}
               <a
-                href="https://shrikrishna.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-sm text-primary hover:underline font-body font-semibold"
+                href="https://kalesh.love"
+                className="text-primary hover:underline"
               >
-                ShriKrishna.com
-              </a>
-            </div>
+                Visit Kalesh's site
+              </a>.
+            </p>
           </div>
 
-          <h2 className="font-heading text-2xl font-semibold text-foreground mt-10 mb-4">
+          <h2 className="font-heading text-xl font-semibold text-foreground mt-10 mb-4">
             Connect
           </h2>
 
           <p>
             Dream Gate is part of the{" "}
             <a
-              href="https://shrikrishna.com"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="https://kalesh.love"
               className="text-primary hover:underline"
             >
-              ShriKrishna.com
+              kalesh.love
             </a>{" "}
-            network of spiritual guidance resources. For deeper work — personal dream
-            analysis, spiritual direction, consciousness exploration — visit the main site.
+            network of consciousness exploration resources. For deeper work — personal
+            guidance, consciousness exploration, contemplative practice — visit the main site.
           </p>
         </div>
       </div>

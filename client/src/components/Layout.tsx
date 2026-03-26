@@ -1,248 +1,79 @@
 import { Link, useLocation } from "wouter";
-import { useState, useEffect } from "react";
-import { Menu, X, Search, Moon } from "lucide-react";
-import { CATEGORIES } from "@/lib/articles";
-import NewsletterSignup from "./NewsletterSignup";
+import { useState, useEffect, type ReactNode } from "react";
 
-export default function Layout({ children }: { children: React.ReactNode }) {
-  const [mobileOpen, setMobileOpen] = useState(false);
+export default function Layout({ children }: { children: ReactNode }) {
   const [location] = useLocation();
   const [showCookieBanner, setShowCookieBanner] = useState(false);
 
   useEffect(() => {
-    const accepted = localStorage.getItem("dg-cookie-consent");
-    if (!accepted) setShowCookieBanner(true);
+    const consent = localStorage.getItem("dg-cookie-consent");
+    if (!consent) setShowCookieBanner(true);
   }, []);
 
-  const acceptCookies = () => {
+  function acceptCookies() {
     localStorage.setItem("dg-cookie-consent", "accepted");
     setShowCookieBanner(false);
-  };
+  }
 
   return (
     <div className="min-h-screen flex flex-col bg-background text-foreground">
       {/* Header */}
-      <header className="sticky top-0 z-50 border-b border-border/50 backdrop-blur-md bg-background/80">
-        <div className="container flex items-center justify-between h-16">
-          <Link href="/" className="flex items-center gap-2 no-underline">
-            <span className="text-2xl font-heading font-bold text-primary tracking-wide">
-              Dream Gate
-            </span>
+      <header className="border-b border-border/40">
+        <div className="max-w-[720px] mx-auto px-5 py-5 flex items-center justify-between">
+          <Link href="/" className="font-heading text-xl tracking-tight text-foreground hover:text-primary transition-colors no-underline">
+            Dream Gate
           </Link>
-
-          {/* Desktop nav */}
-          <nav className="hidden lg:flex items-center gap-6">
-            {CATEGORIES.map((cat) => (
-              <Link
-                key={cat.slug}
-                href={`/category/${cat.slug}`}
-                className={`text-sm font-body transition-colors no-underline ${
-                  location === `/category/${cat.slug}`
-                    ? "text-primary font-semibold"
-                    : "text-muted-foreground hover:text-foreground"
-                }`}
-              >
-                {cat.name}
-              </Link>
-            ))}
-            <Link
-              href="/quizzes"
-              className={`text-sm font-body transition-colors no-underline ${
-                location === "/quizzes"
-                  ? "text-primary font-semibold"
-                  : "text-muted-foreground hover:text-foreground"
-              }`}
-            >
-              Quizzes
-            </Link>
-            <Link
-              href="/dream-decoder"
-              className={`text-sm font-body transition-colors no-underline ${
-                location === "/dream-decoder"
-                  ? "text-primary font-semibold"
-                  : "text-muted-foreground hover:text-foreground"
-              }`}
-            >
-              Dream Decoder
-            </Link>
+          <nav className="flex items-center gap-6 text-sm">
             <Link
               href="/articles"
-              className="text-sm font-body text-muted-foreground hover:text-foreground transition-colors no-underline"
+              className={`transition-colors no-underline ${location === "/articles" ? "text-foreground font-medium" : "text-muted-foreground hover:text-foreground"}`}
             >
-              <Search className="w-4 h-4" />
+              Articles
+            </Link>
+            <Link
+              href="/about"
+              className={`transition-colors no-underline ${location === "/about" ? "text-foreground font-medium" : "text-muted-foreground hover:text-foreground"}`}
+            >
+              About
             </Link>
           </nav>
-
-          {/* Mobile toggle */}
-          <button
-            className="lg:hidden p-2 text-foreground"
-            onClick={() => setMobileOpen(!mobileOpen)}
-            aria-label="Toggle menu"
-          >
-            {mobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
-          </button>
         </div>
-
-        {/* Mobile nav */}
-        {mobileOpen && (
-          <div className="lg:hidden border-t border-border/50 bg-background/95 backdrop-blur-md">
-            <nav className="container py-4 flex flex-col gap-3">
-              {CATEGORIES.map((cat) => (
-                <Link
-                  key={cat.slug}
-                  href={`/category/${cat.slug}`}
-                  className="text-base font-body text-muted-foreground hover:text-foreground transition-colors no-underline py-1"
-                  onClick={() => setMobileOpen(false)}
-                >
-                  {cat.name}
-                </Link>
-              ))}
-              <Link
-                href="/quizzes"
-                className="text-base font-body text-muted-foreground hover:text-foreground transition-colors no-underline py-1"
-                onClick={() => setMobileOpen(false)}
-              >
-                Quizzes
-              </Link>
-              <Link
-                href="/dream-decoder"
-                className="text-base font-body text-muted-foreground hover:text-foreground transition-colors no-underline py-1"
-                onClick={() => setMobileOpen(false)}
-              >
-                Dream Decoder
-              </Link>
-              <Link
-                href="/articles"
-                className="text-base font-body text-muted-foreground hover:text-foreground transition-colors no-underline py-1"
-                onClick={() => setMobileOpen(false)}
-              >
-                All Articles
-              </Link>
-            </nav>
-          </div>
-        )}
       </header>
 
-      {/* Main content */}
+      {/* Main */}
       <main className="flex-1">{children}</main>
 
       {/* Footer */}
-      <footer className="border-t border-border/50 bg-card/50">
-        <div className="container py-16">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
-            {/* Brand */}
-            <div className="md:col-span-1">
-              <h3 className="font-heading text-xl font-bold text-primary mb-3">
-                Dream Gate
-              </h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">
-                What your dreams are trying to tell you. Dream interpretation through
-                spiritual, psychological, and somatic dimensions.
-              </p>
+      <footer className="border-t border-border/40 mt-16">
+        <div className="max-w-[720px] mx-auto px-5 py-8">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 text-sm text-muted-foreground">
+            <div className="flex items-center gap-4">
+              <Link href="/privacy" className="hover:text-foreground transition-colors no-underline">
+                Privacy
+              </Link>
+              <Link href="/terms" className="hover:text-foreground transition-colors no-underline">
+                Terms
+              </Link>
             </div>
-
-            {/* Categories */}
-            <div>
-              <h4 className="font-heading text-lg font-semibold text-foreground mb-3">
-                Explore
-              </h4>
-              <ul className="space-y-2">
-                {CATEGORIES.map((cat) => (
-                  <li key={cat.slug}>
-                    <Link
-                      href={`/category/${cat.slug}`}
-                      className="text-sm text-muted-foreground hover:text-primary transition-colors no-underline"
-                    >
-                      {cat.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Tools */}
-            <div>
-              <h4 className="font-heading text-lg font-semibold text-foreground mb-3">
-                Tools
-              </h4>
-              <ul className="space-y-2">
-                <li>
-                  <Link href="/quizzes" className="text-sm text-muted-foreground hover:text-primary transition-colors no-underline">
-                    Dream Quizzes
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/dream-decoder" className="text-sm text-muted-foreground hover:text-primary transition-colors no-underline">
-                    Dream Decoder
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/articles" className="text-sm text-muted-foreground hover:text-primary transition-colors no-underline">
-                    Article Archive
-                  </Link>
-                </li>
-              </ul>
-            </div>
-
-            {/* Legal */}
-            <div>
-              <h4 className="font-heading text-lg font-semibold text-foreground mb-3">
-                About
-              </h4>
-              <ul className="space-y-2">
-                <li>
-                  <Link href="/about" className="text-sm text-muted-foreground hover:text-primary transition-colors no-underline">
-                    About Dream Gate
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/privacy" className="text-sm text-muted-foreground hover:text-primary transition-colors no-underline">
-                    Privacy Policy
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/terms" className="text-sm text-muted-foreground hover:text-primary transition-colors no-underline">
-                    Terms of Service
-                  </Link>
-                </li>
-                <li>
-                  <a
-                    href="https://shrikrishna.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-sm text-muted-foreground hover:text-primary transition-colors no-underline"
-                  >
-                    ShriKrishna.com
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="mt-12 pt-6 border-t border-border/30 text-center">
-            <p className="text-xs text-muted-foreground">
-              &copy; {new Date().getFullYear()} Dream Gate. All rights reserved.
+            <p className="text-xs">
+              &copy; {new Date().getFullYear()} Dream Gate
             </p>
           </div>
         </div>
       </footer>
 
-      {/* Cookie consent banner */}
+      {/* Cookie Banner */}
       {showCookieBanner && (
-        <div className="fixed bottom-0 inset-x-0 z-50 p-4 bg-card border-t border-border/50 shadow-lg">
-          <div className="container flex flex-col sm:flex-row items-center justify-between gap-3">
+        <div className="fixed bottom-0 left-0 right-0 bg-card border-t border-border px-5 py-4 z-50">
+          <div className="max-w-[720px] mx-auto flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
             <p className="text-sm text-muted-foreground">
-              This site uses essential cookies for functionality. No tracking cookies are used.
-              See our{" "}
-              <Link href="/privacy" className="text-primary hover:underline">
-                Privacy Policy
-              </Link>.
+              This site uses cookies for essential functionality. No tracking. No ads.
             </p>
             <button
               onClick={acceptCookies}
-              className="px-5 py-2 text-sm font-body font-semibold rounded-lg bg-primary text-primary-foreground hover:opacity-90 transition-opacity flex-shrink-0"
+              className="text-sm font-medium text-primary hover:text-primary/80 transition-colors whitespace-nowrap"
             >
-              Accept
+              Got it
             </button>
           </div>
         </div>

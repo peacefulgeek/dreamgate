@@ -8,8 +8,8 @@ export default function Privacy() {
 
   return (
     <Layout>
-      <div className="container max-w-3xl py-16">
-        <h1 className="font-heading text-4xl font-bold text-foreground mb-8">
+      <div className="max-w-[720px] mx-auto px-5 py-16">
+        <h1 className="font-heading text-3xl font-bold text-foreground mb-8">
           Privacy Policy
         </h1>
         <div className="space-y-6 text-foreground/90 leading-relaxed text-sm">
@@ -64,8 +64,8 @@ export default function Privacy() {
           </h2>
           <p>
             For privacy-related questions, visit{" "}
-            <a href="https://shrikrishna.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
-              ShriKrishna.com
+            <a href="https://kalesh.love" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+              kalesh.love
             </a>.
           </p>
         </div>

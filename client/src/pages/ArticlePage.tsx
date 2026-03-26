@@ -1,39 +1,27 @@
 import { useEffect, useState } from "react";
-import { useParams, useLocation } from "wouter";
+import { useParams, useLocation, Link } from "wouter";
 import Layout from "@/components/Layout";
-import ArticleCard from "@/components/ArticleCard";
 import NewsletterSignup from "@/components/NewsletterSignup";
 import {
   getArticle,
   getRelatedArticles,
-  getCrossCategoryArticles,
-  getPopularArticles,
   formatDate,
   getHeroImageUrl,
   type ArticleFull,
-  type ArticleMeta,
 } from "@/lib/articles";
 import { articleJsonLd, faqJsonLd, breadcrumbJsonLd } from "@/lib/seo";
-import { ChevronUp, Clock, Calendar, BookOpen } from "lucide-react";
 
 export default function ArticlePage() {
   const { slug } = useParams<{ slug: string }>();
   const [, navigate] = useLocation();
   const [article, setArticle] = useState<ArticleFull | null>(null);
   const [loading, setLoading] = useState(true);
-  const [showToc, setShowToc] = useState(false);
-  const [showBackToTop, setShowBackToTop] = useState(false);
 
   useEffect(() => {
     if (!slug) return;
     setLoading(true);
     getArticle(slug).then((a) => {
-      if (!a) {
-        navigate("/404");
-        return;
-      }
-      // Check if article is published
-      if (a.dateISO > new Date().toISOString()) {
+      if (!a || a.dateISO > new Date().toISOString()) {
         navigate("/404");
         return;
       }
@@ -43,30 +31,18 @@ export default function ArticlePage() {
     });
   }, [slug, navigate]);
 
-  // Set document head
   useEffect(() => {
     if (!article) return;
     document.title = `${article.title} — Dream Gate`;
 
-    // Meta description
     let meta = document.querySelector('meta[name="description"]');
-    if (!meta) {
-      meta = document.createElement("meta");
-      meta.setAttribute("name", "description");
-      document.head.appendChild(meta);
-    }
+    if (!meta) { meta = document.createElement("meta"); meta.setAttribute("name", "description"); document.head.appendChild(meta); }
     meta.setAttribute("content", article.metaDescription);
 
-    // Canonical
     let canonical = document.querySelector('link[rel="canonical"]');
-    if (!canonical) {
-      canonical = document.createElement("link");
-      canonical.setAttribute("rel", "canonical");
-      document.head.appendChild(canonical);
-    }
-    canonical.setAttribute("href", `https://dreamgate.love/${article.slug}`);
+    if (!canonical) { canonical = document.createElement("link"); canonical.setAttribute("rel", "canonical"); document.head.appendChild(canonical); }
+    canonical.setAttribute("href", `https://dreamgate.love/article/${article.slug}`);
 
-    // JSON-LD
     const scripts: HTMLScriptElement[] = [];
     const addLd = (json: string) => {
       const el = document.createElement("script");
@@ -79,20 +55,17 @@ export default function ArticlePage() {
     addLd(articleJsonLd(article));
     const faqLd = faqJsonLd(article.faqs || []);
     if (faqLd) addLd(faqLd);
-    addLd(
-      breadcrumbJsonLd([
-        { name: "Home", url: "https://dreamgate.love" },
-        { name: article.categoryName, url: `https://dreamgate.love/category/${article.category}` },
-        { name: article.title, url: `https://dreamgate.love/${article.slug}` },
-      ])
-    );
+    addLd(breadcrumbJsonLd([
+      { name: "Home", url: "https://dreamgate.love" },
+      { name: article.categoryName, url: `https://dreamgate.love/category/${article.category}` },
+      { name: article.title, url: `https://dreamgate.love/article/${article.slug}` },
+    ]));
 
-    // OG tags
     const ogTags: Record<string, string> = {
       "og:title": article.title,
       "og:description": article.metaDescription,
       "og:type": "article",
-      "og:url": `https://dreamgate.love/${article.slug}`,
+      "og:url": `https://dreamgate.love/article/${article.slug}`,
       "og:image": `https://dreamgate.b-cdn.net/og/article-${article.id}.webp`,
       "og:site_name": "Dream Gate",
       "twitter:card": "summary_large_image",
@@ -100,213 +73,124 @@ export default function ArticlePage() {
       "twitter:description": article.metaDescription,
       "twitter:image": `https://dreamgate.b-cdn.net/og/article-${article.id}.webp`,
     };
-
     const ogEls: HTMLMetaElement[] = [];
     for (const [prop, content] of Object.entries(ogTags)) {
       let el = document.querySelector(`meta[property="${prop}"]`) as HTMLMetaElement;
-      if (!el) {
-        el = document.createElement("meta");
-        el.setAttribute("property", prop);
-        document.head.appendChild(el);
-        ogEls.push(el);
-      }
+      if (!el) { el = document.createElement("meta"); el.setAttribute("property", prop); document.head.appendChild(el); ogEls.push(el); }
       el.setAttribute("content", content);
     }
 
-    return () => {
-      scripts.forEach((el) => el.remove());
-      ogEls.forEach((el) => el.remove());
-    };
+    return () => { scripts.forEach((el) => el.remove()); ogEls.forEach((el) => el.remove()); };
   }, [article]);
-
-  // Back to top button
-  useEffect(() => {
-    const handleScroll = () => setShowBackToTop(window.scrollY > 600);
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   if (loading || !article) {
     return (
       <Layout>
         <div className="min-h-screen flex items-center justify-center">
-          <div className="w-8 h-8 border-2 border-primary border-t-transparent rounded-full animate-spin" />
+          <div className="w-6 h-6 border-2 border-primary border-t-transparent rounded-full animate-spin" />
         </div>
       </Layout>
     );
   }
 
-  const related = getRelatedArticles(article.slug, article.category, 4);
-  const crossCategory = getCrossCategoryArticles(article.slug, article.category, 3);
-  const popular = getPopularArticles(article.slug, 5);
   const heroUrl = getHeroImageUrl(article.id);
-
-  // Build TOC from body
-  const tocItems: { id: string; text: string }[] = [];
-  const h2Regex = /<h2[^>]*id="([^"]*)"[^>]*>([^<]*)<\/h2>/g;
-  let match;
-  while ((match = h2Regex.exec(article.body)) !== null) {
-    tocItems.push({ id: match[1], text: match[2] });
-  }
+  const related = getRelatedArticles(article.slug, article.category, 3);
+  const articleUrl = `https://dreamgate.love/article/${article.slug}`;
+  const shareTwitter = `https://twitter.com/intent/tweet?url=${encodeURIComponent(articleUrl)}&text=${encodeURIComponent(article.title)}`;
+  const shareFacebook = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(articleUrl)}`;
+  const shareLinkedin = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(articleUrl)}`;
 
   return (
     <Layout>
-      {/* Hero */}
-      <div className="relative h-64 sm:h-80 overflow-hidden">
+      {/* Hero image — full bleed */}
+      <div className="w-full max-h-[420px] overflow-hidden">
         <img
           src={heroUrl}
           alt={article.heroAlt}
+          width={1200}
+          height={675}
           className="w-full h-full object-cover"
-          onError={(e) => {
-            (e.target as HTMLImageElement).style.display = "none";
-          }}
+          onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/30 to-background" />
       </div>
 
-      <div className="container max-w-4xl -mt-20 relative z-10">
+      {/* Article content — single column 720px */}
+      <div className="max-w-[720px] mx-auto px-5 relative">
+        {/* Share buttons — floating left on desktop */}
+        <div className="hidden lg:flex flex-col gap-3 fixed left-[calc(50%-420px)] top-1/3 z-40">
+          <a href={shareTwitter} target="_blank" rel="nofollow noopener" className="text-muted-foreground hover:text-foreground transition-colors text-xs" title="Share on X">𝕏</a>
+          <a href={shareFacebook} target="_blank" rel="nofollow noopener" className="text-muted-foreground hover:text-foreground transition-colors text-xs" title="Share on Facebook">f</a>
+          <a href={shareLinkedin} target="_blank" rel="nofollow noopener" className="text-muted-foreground hover:text-foreground transition-colors text-xs" title="Share on LinkedIn">in</a>
+        </div>
+
         {/* Breadcrumb */}
-        <nav className="text-sm text-muted-foreground mb-4 font-body">
-          <a href="/" className="hover:text-primary transition-colors no-underline">
-            Home
-          </a>
+        <nav className="text-sm text-muted-foreground mt-8 mb-4">
+          <Link href="/" className="hover:text-foreground transition-colors no-underline">Home</Link>
           <span className="mx-2">/</span>
-          <a
-            href={`/category/${article.category}`}
-            className="hover:text-primary transition-colors no-underline"
-          >
-            {article.categoryName}
-          </a>
+          <Link href={`/category/${article.category}`} className="hover:text-foreground transition-colors no-underline">{article.categoryName}</Link>
         </nav>
 
-        {/* Article header */}
+        {/* Title below hero */}
         <header className="mb-10">
-          <h1 className="font-heading text-3xl sm:text-4xl md:text-5xl font-bold text-foreground leading-tight mb-4">
+          <h1 className="font-heading text-3xl sm:text-4xl font-bold text-foreground leading-tight mb-4">
             {article.title}
           </h1>
           <div className="flex flex-wrap items-center gap-4 text-sm text-muted-foreground">
-            <span className="flex items-center gap-1.5">
-              <Calendar className="w-4 h-4" />
-              {formatDate(article.dateISO)}
-            </span>
-            <span className="flex items-center gap-1.5">
-              <Clock className="w-4 h-4" />
-              {article.readingTime} min read
-            </span>
-            <span className="flex items-center gap-1.5">
-              <BookOpen className="w-4 h-4" />
-              {article.wordCount.toLocaleString()} words
-            </span>
+            <span>{formatDate(article.dateISO)}</span>
+            <span>&middot;</span>
+            <span>{article.readingTime} min read</span>
           </div>
         </header>
 
-        {/* TOC toggle */}
-        {tocItems.length > 2 && (
-          <div className="mb-8">
-            <button
-              onClick={() => setShowToc(!showToc)}
-              className="text-sm font-body font-semibold text-primary hover:underline"
-            >
-              {showToc ? "Hide" : "Show"} Table of Contents ({tocItems.length} sections)
-            </button>
-            {showToc && (
-              <nav className="mt-3 p-4 rounded-lg bg-card border border-border/50">
-                <ol className="space-y-1.5">
-                  {tocItems.map((item, i) => (
-                    <li key={item.id}>
-                      <a
-                        href={`#${item.id}`}
-                        className="text-sm text-muted-foreground hover:text-primary transition-colors no-underline"
-                      >
-                        {i + 1}. {item.text}
-                      </a>
-                    </li>
-                  ))}
-                </ol>
-              </nav>
-            )}
-          </div>
-        )}
-
-        {/* Article body */}
+        {/* Article body — body text 20px, line-height 1.8, paragraph spacing 1.5em */}
         <article
-          className="article-body prose-invert max-w-none"
+          className="article-body"
+          style={{ fontSize: "20px", lineHeight: 1.8 }}
           dangerouslySetInnerHTML={{ __html: article.body }}
         />
 
-        {/* Author bio sidebar */}
-        <aside className="my-12 p-6 rounded-xl bg-card border border-border/50 flex items-start gap-5">
-          <div className="w-14 h-14 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
-            <span className="font-heading text-xl font-bold text-primary">K</span>
-          </div>
-          <div>
-            <h3 className="font-heading text-lg font-semibold text-foreground mb-1">
-              Krishna — Mystic &amp; Spiritual Advisor
-            </h3>
-            <p className="text-sm text-muted-foreground leading-relaxed mb-2">
-              Thirty years navigating the territory between psychology and spirit. Dream work, consciousness exploration, and the kind of guidance that does not let you hide from yourself.
-            </p>
-            <a
-              href="https://shrikrishna.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-sm text-primary hover:underline font-body font-semibold"
-            >
-              ShriKrishna.com
-            </a>
-          </div>
-        </aside>
+        {/* Horizontal rule before bio */}
+        <hr className="my-12 border-border/40" />
 
-        {/* Newsletter CTA mid-article */}
-        <div className="my-12 p-8 rounded-xl bg-card border border-border/50 text-center">
-          <h3 className="font-heading text-xl font-semibold text-foreground mb-2">
-            The Threshold Dispatch
-          </h3>
-          <p className="text-sm text-muted-foreground mb-4">
-            Dream interpretation that does not insult your intelligence. Delivered when it matters.
+        {/* Inline author bio — NOT a sidebar card */}
+        <div className="mb-12">
+          <p className="text-base text-foreground leading-relaxed">
+            <strong>About Kalesh</strong> — Kalesh is a consciousness teacher and writer whose work explores the intersection of ancient contemplative traditions and modern neuroscience. With decades of practice in meditation, breathwork, and somatic inquiry, he guides others toward embodied awareness.{" "}
+            <a href="https://kalesh.love" className="text-primary hover:underline">Visit Kalesh's site</a>.
           </p>
-          <NewsletterSignup source={`article-${article.slug}`} variant="hero" />
         </div>
 
-        {/* Related articles — same category */}
+        {/* Cross-links: "More from [Category]" — 3 title-only links */}
         {related.length > 0 && (
-          <section className="mt-16 mb-12">
-            <h2 className="font-heading text-2xl font-bold text-foreground mb-6">
+          <section className="mb-12">
+            <h2 className="font-heading text-lg font-semibold text-foreground mb-4">
               More from {article.categoryName}
             </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {related.map((a) => (
-                <ArticleCard key={a.id} article={a} variant="compact" />
+            <ul className="space-y-3">
+              {related.map((r) => (
+                <li key={r.id}>
+                  <Link href={`/article/${r.slug}`} className="text-base text-foreground hover:text-primary transition-colors no-underline">
+                    {r.title}
+                  </Link>
+                </li>
               ))}
-            </div>
+            </ul>
           </section>
         )}
 
-        {/* Cross-category articles */}
-        {crossCategory.length > 0 && (
-          <section className="mb-12">
-            <h2 className="font-heading text-2xl font-bold text-foreground mb-6">
-              Keep Reading
-            </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-              {crossCategory.map((a) => (
-                <ArticleCard key={a.id} article={a} />
-              ))}
-            </div>
-          </section>
-        )}
+        {/* Newsletter */}
+        <div className="mb-16">
+          <NewsletterSignup source={`article-${article.slug}`} variant="inline" />
+        </div>
+
+        {/* Share buttons — bottom on mobile */}
+        <div className="lg:hidden flex items-center gap-4 mb-12 text-sm">
+          <span className="text-muted-foreground">Share:</span>
+          <a href={shareTwitter} target="_blank" rel="nofollow noopener" className="text-muted-foreground hover:text-foreground transition-colors no-underline">𝕏</a>
+          <a href={shareFacebook} target="_blank" rel="nofollow noopener" className="text-muted-foreground hover:text-foreground transition-colors no-underline">Facebook</a>
+          <a href={shareLinkedin} target="_blank" rel="nofollow noopener" className="text-muted-foreground hover:text-foreground transition-colors no-underline">LinkedIn</a>
+        </div>
       </div>
-
-      {/* Back to top */}
-      {showBackToTop && (
-        <button
-          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className="fixed bottom-6 right-6 z-50 p-3 rounded-full bg-primary text-primary-foreground shadow-lg hover:opacity-90 transition-opacity"
-          aria-label="Back to top"
-        >
-          <ChevronUp className="w-5 h-5" />
-        </button>
-      )}
     </Layout>
   );
 }
