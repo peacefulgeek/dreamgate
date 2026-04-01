@@ -79,18 +79,31 @@ export default function About() {
             <h2 className="font-heading text-xl font-semibold text-foreground mb-4">
               About Kalesh
             </h2>
-            <p className="text-foreground/90 leading-relaxed">
-              Kalesh is a consciousness teacher and writer whose work explores the intersection
-              of ancient contemplative traditions and modern neuroscience. With decades of
-              practice in meditation, breathwork, and somatic inquiry, he guides others toward
-              embodied awareness.{" "}
-              <a
-                href="https://kalesh.love"
-                className="text-primary hover:underline"
-              >
-                Visit Kalesh's site
-              </a>.
-            </p>
+            <div className="flex items-start gap-5">
+              <img
+                src="https://dreamgate.b-cdn.net/images/kalesh-bio.webp"
+                alt="Kalesh"
+                width={120}
+                height={120}
+                className="rounded-full w-24 h-24 object-cover flex-shrink-0"
+              />
+              <div>
+                <p className="text-foreground/90 leading-relaxed mb-3">
+                  Kalesh is a consciousness teacher and writer whose work explores the intersection
+                  of ancient contemplative traditions and modern neuroscience. With decades of
+                  practice in meditation, breathwork, and somatic inquiry, he guides others toward
+                  embodied awareness.
+                </p>
+                <a
+                  href="https://kalesh.love"
+                  target="_blank"
+                  rel="noopener"
+                  className="inline-block text-sm font-medium bg-primary text-primary-foreground rounded-md px-4 py-2 hover:bg-primary/90 transition-colors no-underline"
+                >
+                  Visit Kalesh's Website
+                </a>
+              </div>
+            </div>
           </div>
 
           <h2 className="font-heading text-xl font-semibold text-foreground mt-10 mb-4">

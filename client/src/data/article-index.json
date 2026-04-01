@@ -32,7 +32,7 @@
     "readingTime": 10,
     "openerType": "named-reference",
     "conclusionType": "challenge",
-    "linkType": "internal",
+    "linkType": "product",
     "faqCount": 4,
     "namedReference": "Stephen LaBerge",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm light i"
@@ -51,7 +51,7 @@
     "readingTime": 10,
     "openerType": "scene-setting",
     "conclusionType": "tender",
-    "linkType": "kalesh",
+    "linkType": "internal",
     "faqCount": 2,
     "namedReference": "Stanislav Grof",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm, inviti"
@@ -70,7 +70,7 @@
     "readingTime": 10,
     "openerType": "provocation",
     "conclusionType": "tender",
-    "linkType": "internal",
+    "linkType": "external",
     "faqCount": 2,
     "namedReference": "Rubin Naiman",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm, inviti"
@@ -89,7 +89,7 @@
     "readingTime": 10,
     "openerType": "scene-setting",
     "conclusionType": "tender",
-    "linkType": "external",
+    "linkType": "kalesh",
     "faqCount": 2,
     "namedReference": "Amma",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm, inviti"
@@ -127,7 +127,7 @@
     "readingTime": 10,
     "openerType": "question",
     "conclusionType": "tender",
-    "linkType": "kalesh",
+    "linkType": "product",
     "faqCount": 3,
     "namedReference": "Tore Nielsen",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm, inviti"
@@ -146,7 +146,7 @@
     "readingTime": 10,
     "openerType": "first-person",
     "conclusionType": "challenge",
-    "linkType": "external",
+    "linkType": "internal",
     "faqCount": 3,
     "namedReference": "Amma",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm, inviti"
@@ -184,7 +184,7 @@
     "readingTime": 6,
     "openerType": "named-reference",
     "conclusionType": "challenge",
-    "linkType": "kalesh",
+    "linkType": "product",
     "faqCount": 4,
     "namedReference": "Vedantic dream states",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm, inviti"
@@ -203,7 +203,7 @@
     "readingTime": 10,
     "openerType": "scene-setting",
     "conclusionType": "tender",
-    "linkType": "external",
+    "linkType": "internal",
     "faqCount": 0,
     "namedReference": "Rubin Naiman",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm, inviti"
@@ -222,7 +222,7 @@
     "readingTime": 10,
     "openerType": "gut-punch",
     "conclusionType": "challenge",
-    "linkType": "internal",
+    "linkType": "product",
     "faqCount": 5,
     "namedReference": "Carl Jung",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm, inviti"
@@ -241,7 +241,7 @@
     "readingTime": 11,
     "openerType": "first-person",
     "conclusionType": "challenge",
-    "linkType": "internal",
+    "linkType": "kalesh",
     "faqCount": 2,
     "namedReference": "Carl Jung",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm, inviti"
@@ -279,7 +279,7 @@
     "readingTime": 11,
     "openerType": "named-reference",
     "conclusionType": "tender",
-    "linkType": "kalesh",
+    "linkType": "product",
     "faqCount": 3,
     "namedReference": "Vedantic dream states",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm, inviti"
@@ -298,7 +298,7 @@
     "readingTime": 10,
     "openerType": "gut-punch",
     "conclusionType": "challenge",
-    "linkType": "external",
+    "linkType": "internal",
     "faqCount": 5,
     "namedReference": "Vedantic dream states",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, beckoning the viewer "
@@ -317,7 +317,7 @@
     "readingTime": 10,
     "openerType": "gut-punch",
     "conclusionType": "tender",
-    "linkType": "internal",
+    "linkType": "external",
     "faqCount": 5,
     "namedReference": "Tore Nielsen",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm, inviti"
@@ -336,7 +336,7 @@
     "readingTime": 6,
     "openerType": "scene-setting",
     "conclusionType": "tender",
-    "linkType": "internal",
+    "linkType": "kalesh",
     "faqCount": 2,
     "namedReference": "J. Allan Hobson",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, with shimmering, ethe"
@@ -355,7 +355,7 @@
     "readingTime": 10,
     "openerType": "question",
     "conclusionType": "tender",
-    "linkType": "external",
+    "linkType": "internal",
     "faqCount": 3,
     "namedReference": "Stanislav Grof",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm, inviti"
@@ -374,7 +374,7 @@
     "readingTime": 9,
     "openerType": "question",
     "conclusionType": "challenge",
-    "linkType": "internal",
+    "linkType": "product",
     "faqCount": 3,
     "namedReference": "Amma",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, with warm light spill"
@@ -393,7 +393,7 @@
     "readingTime": 11,
     "openerType": "named-reference",
     "conclusionType": "tender",
-    "linkType": "external",
+    "linkType": "internal",
     "faqCount": 4,
     "namedReference": "Stephen LaBerge",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm light o"
@@ -412,7 +412,7 @@
     "readingTime": 11,
     "openerType": "scene-setting",
     "conclusionType": "challenge",
-    "linkType": "kalesh",
+    "linkType": "external",
     "faqCount": 0,
     "namedReference": "Carl Jung",
     "heroImageDesc": "A luminous golden doorway stands open against a vast, star-dusted cosmos, beckon"
@@ -431,7 +431,7 @@
     "readingTime": 7,
     "openerType": "named-reference",
     "conclusionType": "tender",
-    "linkType": "kalesh",
+    "linkType": "product",
     "faqCount": 4,
     "namedReference": "Deirdre Barrett",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, with swirling nebulae"
@@ -469,7 +469,7 @@
     "readingTime": 10,
     "openerType": "first-person",
     "conclusionType": "tender",
-    "linkType": "internal",
+    "linkType": "product",
     "faqCount": 3,
     "namedReference": "Tore Nielsen",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, with warm, inviting l"
@@ -488,7 +488,7 @@
     "readingTime": 10,
     "openerType": "first-person",
     "conclusionType": "challenge",
-    "linkType": "internal",
+    "linkType": "kalesh",
     "faqCount": 3,
     "namedReference": "Ramana Maharshi",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, beckoning the viewer "
@@ -526,7 +526,7 @@
     "readingTime": 10,
     "openerType": "named-reference",
     "conclusionType": "tender",
-    "linkType": "internal",
+    "linkType": "product",
     "faqCount": 3,
     "namedReference": "J. Allan Hobson",
     "heroImageDesc": "A luminous warm dreamscape. A glowing doorway opens into a vast field of stars, "
@@ -564,7 +564,7 @@
     "readingTime": 10,
     "openerType": "scene-setting",
     "conclusionType": "tender",
-    "linkType": "kalesh",
+    "linkType": "external",
     "faqCount": 0,
     "namedReference": "Rubin Naiman",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm, inviti"
@@ -583,7 +583,7 @@
     "readingTime": 10,
     "openerType": "gut-punch",
     "conclusionType": "challenge",
-    "linkType": "external",
+    "linkType": "product",
     "faqCount": 5,
     "namedReference": "J. Allan Hobson",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm, inviti"
@@ -621,7 +621,7 @@
     "readingTime": 10,
     "openerType": "question",
     "conclusionType": "tender",
-    "linkType": "internal",
+    "linkType": "product",
     "faqCount": 3,
     "namedReference": "Deirdre Barrett",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, inviting the dreamer "
@@ -640,7 +640,7 @@
     "readingTime": 6,
     "openerType": "scene-setting",
     "conclusionType": "challenge",
-    "linkType": "external",
+    "linkType": "kalesh",
     "faqCount": 2,
     "namedReference": "Matthew Walker",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, inviting entry into a"
@@ -659,7 +659,7 @@
     "readingTime": 10,
     "openerType": "named-reference",
     "conclusionType": "tender",
-    "linkType": "internal",
+    "linkType": "external",
     "faqCount": 4,
     "namedReference": "Ramana Maharshi",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm, inviti"
@@ -678,7 +678,7 @@
     "readingTime": 10,
     "openerType": "question",
     "conclusionType": "tender",
-    "linkType": "internal",
+    "linkType": "product",
     "faqCount": 3,
     "namedReference": "Amma",
     "heroImageDesc": "A luminous warm dreamscape. A glowing doorway stands open against a backdrop of "
@@ -697,7 +697,7 @@
     "readingTime": 10,
     "openerType": "gut-punch",
     "conclusionType": "tender",
-    "linkType": "external",
+    "linkType": "internal",
     "faqCount": 4,
     "namedReference": "Carl Jung",
     "heroImageDesc": "A luminous warm dreamscape. A glowing doorway stands open against a vast and sta"
@@ -716,7 +716,7 @@
     "readingTime": 10,
     "openerType": "first-person",
     "conclusionType": "tender",
-    "linkType": "internal",
+    "linkType": "external",
     "faqCount": 2,
     "namedReference": "Tore Nielsen",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm, inviti"
@@ -735,7 +735,7 @@
     "readingTime": 11,
     "openerType": "first-person",
     "conclusionType": "tender",
-    "linkType": "external",
+    "linkType": "kalesh",
     "faqCount": 2,
     "namedReference": "Amma",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm, inviti"
@@ -773,7 +773,7 @@
     "readingTime": 11,
     "openerType": "gut-punch",
     "conclusionType": "tender",
-    "linkType": "internal",
+    "linkType": "product",
     "faqCount": 4,
     "namedReference": "Tore Nielsen",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm, inviti"
@@ -792,7 +792,7 @@
     "readingTime": 10,
     "openerType": "named-reference",
     "conclusionType": "tender",
-    "linkType": "external",
+    "linkType": "internal",
     "faqCount": 4,
     "namedReference": "Carl Jung",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm light i"
@@ -830,7 +830,7 @@
     "readingTime": 11,
     "openerType": "provocation",
     "conclusionType": "tender",
-    "linkType": "internal",
+    "linkType": "product",
     "faqCount": 2,
     "namedReference": "Stanislav Grof",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm, inviti"
@@ -868,7 +868,7 @@
     "readingTime": 10,
     "openerType": "first-person",
     "conclusionType": "challenge",
-    "linkType": "external",
+    "linkType": "product",
     "faqCount": 2,
     "namedReference": "Rubin Naiman",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm light o"
@@ -887,7 +887,7 @@
     "readingTime": 10,
     "openerType": "gut-punch",
     "conclusionType": "challenge",
-    "linkType": "external",
+    "linkType": "kalesh",
     "faqCount": 4,
     "namedReference": "Stanislav Grof",
     "heroImageDesc": "A luminous golden doorway stands open against a vast starfield, spilling warm, i"
@@ -925,7 +925,7 @@
     "readingTime": 10,
     "openerType": "named-reference",
     "conclusionType": "tender",
-    "linkType": "internal",
+    "linkType": "product",
     "faqCount": 3,
     "namedReference": "Tore Nielsen",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm, inviti"
@@ -963,7 +963,7 @@
     "readingTime": 10,
     "openerType": "scene-setting",
     "conclusionType": "challenge",
-    "linkType": "kalesh",
+    "linkType": "external",
     "faqCount": 0,
     "namedReference": "Carl Jung",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm light o"
@@ -1001,7 +1001,7 @@
     "readingTime": 10,
     "openerType": "scene-setting",
     "conclusionType": "tender",
-    "linkType": "kalesh",
+    "linkType": "internal",
     "faqCount": 0,
     "namedReference": "Vedantic dream states",
     "heroImageDesc": "A luminous golden doorway stands open against a vast starfield, spilling warm, i"
@@ -1020,7 +1020,7 @@
     "readingTime": 5,
     "openerType": "named-reference",
     "conclusionType": "challenge",
-    "linkType": "external",
+    "linkType": "product",
     "faqCount": 4,
     "namedReference": "Deirdre Barrett",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, with swirling nebulae"
@@ -1039,7 +1039,7 @@
     "readingTime": 10,
     "openerType": "first-person",
     "conclusionType": "challenge",
-    "linkType": "kalesh",
+    "linkType": "internal",
     "faqCount": 2,
     "namedReference": "Matthew Walker",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm, inviti"
@@ -1058,7 +1058,7 @@
     "readingTime": 11,
     "openerType": "first-person",
     "conclusionType": "tender",
-    "linkType": "internal",
+    "linkType": "external",
     "faqCount": 3,
     "namedReference": "Deirdre Barrett",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm, inviti"
@@ -1077,7 +1077,7 @@
     "readingTime": 10,
     "openerType": "question",
     "conclusionType": "tender",
-    "linkType": "external",
+    "linkType": "product",
     "faqCount": 3,
     "namedReference": "Carl Jung",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm, inviti"
@@ -1096,7 +1096,7 @@
     "readingTime": 10,
     "openerType": "first-person",
     "conclusionType": "tender",
-    "linkType": "external",
+    "linkType": "internal",
     "faqCount": 2,
     "namedReference": "Deirdre Barrett",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm, inviti"
@@ -1115,7 +1115,7 @@
     "readingTime": 10,
     "openerType": "gut-punch",
     "conclusionType": "tender",
-    "linkType": "internal",
+    "linkType": "product",
     "faqCount": 5,
     "namedReference": "J. Allan Hobson",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, beckoning the viewer "
@@ -1134,7 +1134,7 @@
     "readingTime": 10,
     "openerType": "question",
     "conclusionType": "challenge",
-    "linkType": "internal",
+    "linkType": "kalesh",
     "faqCount": 3,
     "namedReference": "Carl Jung",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm, inviti"
@@ -1172,7 +1172,7 @@
     "readingTime": 10,
     "openerType": "named-reference",
     "conclusionType": "challenge",
-    "linkType": "kalesh",
+    "linkType": "product",
     "faqCount": 4,
     "namedReference": "J. Allan Hobson",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm, inviti"
@@ -1191,7 +1191,7 @@
     "readingTime": 11,
     "openerType": "scene-setting",
     "conclusionType": "tender",
-    "linkType": "kalesh",
+    "linkType": "internal",
     "faqCount": 2,
     "namedReference": "Ramana Maharshi",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm, inviti"
@@ -1229,7 +1229,7 @@
     "readingTime": 10,
     "openerType": "named-reference",
     "conclusionType": "tender",
-    "linkType": "external",
+    "linkType": "product",
     "faqCount": 4,
     "namedReference": "Carl Jung",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm, inviti"
@@ -1267,7 +1267,7 @@
     "readingTime": 10,
     "openerType": "named-reference",
     "conclusionType": "challenge",
-    "linkType": "external",
+    "linkType": "product",
     "faqCount": 4,
     "namedReference": "Tore Nielsen",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm, inviti"
@@ -1286,7 +1286,7 @@
     "readingTime": 10,
     "openerType": "first-person",
     "conclusionType": "challenge",
-    "linkType": "internal",
+    "linkType": "kalesh",
     "faqCount": 3,
     "namedReference": "Stephen LaBerge",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm light o"
@@ -1324,7 +1324,7 @@
     "readingTime": 5,
     "openerType": "named-reference",
     "conclusionType": "challenge",
-    "linkType": "kalesh",
+    "linkType": "product",
     "faqCount": 3,
     "namedReference": "Rubin Naiman",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm, inviti"
@@ -1381,7 +1381,7 @@
     "readingTime": 10,
     "openerType": "gut-punch",
     "conclusionType": "challenge",
-    "linkType": "external",
+    "linkType": "kalesh",
     "faqCount": 5,
     "namedReference": "Amma",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, beckoning the dreamer"
@@ -1419,7 +1419,7 @@
     "readingTime": 11,
     "openerType": "named-reference",
     "conclusionType": "challenge",
-    "linkType": "internal",
+    "linkType": "product",
     "faqCount": 4,
     "namedReference": "Vedantic dream states",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, beckoning the viewer "
@@ -1457,7 +1457,7 @@
     "readingTime": 10,
     "openerType": "first-person",
     "conclusionType": "challenge",
-    "linkType": "internal",
+    "linkType": "external",
     "faqCount": 3,
     "namedReference": "Stephen LaBerge",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, beckoning the viewer "
@@ -1476,7 +1476,7 @@
     "readingTime": 10,
     "openerType": "provocation",
     "conclusionType": "tender",
-    "linkType": "external",
+    "linkType": "product",
     "faqCount": 2,
     "namedReference": "Deirdre Barrett",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, revealing a warm, inv"
@@ -1514,7 +1514,7 @@
     "readingTime": 10,
     "openerType": "question",
     "conclusionType": "challenge",
-    "linkType": "internal",
+    "linkType": "product",
     "faqCount": 3,
     "namedReference": "Tore Nielsen",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm light o"
@@ -1533,7 +1533,7 @@
     "readingTime": 10,
     "openerType": "gut-punch",
     "conclusionType": "tender",
-    "linkType": "internal",
+    "linkType": "kalesh",
     "faqCount": 4,
     "namedReference": "Vedantic dream states",
     "heroImageDesc": "A luminous, golden doorway stands open against a vast and serene starfield, radi"
@@ -1571,7 +1571,7 @@
     "readingTime": 10,
     "openerType": "question",
     "conclusionType": "tender",
-    "linkType": "internal",
+    "linkType": "product",
     "faqCount": 3,
     "namedReference": "Tore Nielsen",
     "heroImageDesc": "A luminous, golden doorway stands open against a vast and brilliant starfield, b"
@@ -1609,7 +1609,7 @@
     "readingTime": 10,
     "openerType": "first-person",
     "conclusionType": "tender",
-    "linkType": "internal",
+    "linkType": "external",
     "faqCount": 3,
     "namedReference": "Carl Jung",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm, inviti"
@@ -1628,7 +1628,7 @@
     "readingTime": 10,
     "openerType": "named-reference",
     "conclusionType": "tender",
-    "linkType": "internal",
+    "linkType": "product",
     "faqCount": 4,
     "namedReference": "Stephen LaBerge",
     "heroImageDesc": "A luminous, golden doorway stands open against a vast and beautiful starfield. T"
@@ -1647,7 +1647,7 @@
     "readingTime": 10,
     "openerType": "scene-setting",
     "conclusionType": "challenge",
-    "linkType": "kalesh",
+    "linkType": "internal",
     "faqCount": 2,
     "namedReference": "Stanislav Grof",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm, inviti"
@@ -1666,7 +1666,7 @@
     "readingTime": 9,
     "openerType": "gut-punch",
     "conclusionType": "challenge",
-    "linkType": "kalesh",
+    "linkType": "product",
     "faqCount": 5,
     "namedReference": "Matthew Walker",
     "heroImageDesc": "A luminous, golden doorway stands ajar in a field of brilliant stars, with warm,"
@@ -1685,7 +1685,7 @@
     "readingTime": 11,
     "openerType": "gut-punch",
     "conclusionType": "challenge",
-    "linkType": "internal",
+    "linkType": "kalesh",
     "faqCount": 5,
     "namedReference": "Ramana Maharshi",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm, inviti"
@@ -1723,7 +1723,7 @@
     "readingTime": 6,
     "openerType": "question",
     "conclusionType": "tender",
-    "linkType": "external",
+    "linkType": "product",
     "faqCount": 3,
     "namedReference": "Rubin Naiman",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, radiating a warm and "
@@ -1742,7 +1742,7 @@
     "readingTime": 10,
     "openerType": "gut-punch",
     "conclusionType": "challenge",
-    "linkType": "kalesh",
+    "linkType": "internal",
     "faqCount": 4,
     "namedReference": "J. Allan Hobson",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm light o"
@@ -1780,7 +1780,7 @@
     "readingTime": 11,
     "openerType": "provocation",
     "conclusionType": "tender",
-    "linkType": "internal",
+    "linkType": "kalesh",
     "faqCount": 2,
     "namedReference": "Tore Nielsen",
     "heroImageDesc": "A luminous, golden key floats in a vast, star-dusted cosmos. The key glows with "
@@ -1818,7 +1818,7 @@
     "readingTime": 10,
     "openerType": "first-person",
     "conclusionType": "challenge",
-    "linkType": "kalesh",
+    "linkType": "product",
     "faqCount": 3,
     "namedReference": "Deirdre Barrett",
     "heroImageDesc": "A luminous, golden clock face hangs in a vast and starry sky. Its hands are made"
@@ -1837,7 +1837,7 @@
     "readingTime": 11,
     "openerType": "provocation",
     "conclusionType": "challenge",
-    "linkType": "external",
+    "linkType": "internal",
     "faqCount": 2,
     "namedReference": "Deirdre Barrett",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, revealing a warm, inv"
@@ -1875,7 +1875,7 @@
     "readingTime": 10,
     "openerType": "provocation",
     "conclusionType": "tender",
-    "linkType": "internal",
+    "linkType": "product",
     "faqCount": 2,
     "namedReference": "Tore Nielsen",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm, inviti"
@@ -1913,7 +1913,7 @@
     "readingTime": 10,
     "openerType": "provocation",
     "conclusionType": "tender",
-    "linkType": "kalesh",
+    "linkType": "product",
     "faqCount": 2,
     "namedReference": "Matthew Walker",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm light o"
@@ -1932,7 +1932,7 @@
     "readingTime": 10,
     "openerType": "named-reference",
     "conclusionType": "tender",
-    "linkType": "external",
+    "linkType": "kalesh",
     "faqCount": 4,
     "namedReference": "Stanislav Grof",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, beckoning the viewer "
@@ -1970,7 +1970,7 @@
     "readingTime": 11,
     "openerType": "question",
     "conclusionType": "tender",
-    "linkType": "external",
+    "linkType": "product",
     "faqCount": 3,
     "namedReference": "Stephen LaBerge",
     "heroImageDesc": "A luminous golden doorway stands open in a vast, starry dreamscape, with warm li"
@@ -1989,7 +1989,7 @@
     "readingTime": 10,
     "openerType": "provocation",
     "conclusionType": "challenge",
-    "linkType": "external",
+    "linkType": "internal",
     "faqCount": 2,
     "namedReference": "Carl Jung",
     "heroImageDesc": "A luminous golden doorway stands open against a vast starfield, inviting the vie"
@@ -2008,7 +2008,7 @@
     "readingTime": 4,
     "openerType": "first-person",
     "conclusionType": "challenge",
-    "linkType": "internal",
+    "linkType": "external",
     "faqCount": 3,
     "namedReference": "Stephen LaBerge",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm, inviti"
@@ -2046,7 +2046,7 @@
     "readingTime": 8,
     "openerType": "scene-setting",
     "conclusionType": "tender",
-    "linkType": "external",
+    "linkType": "internal",
     "faqCount": 0,
     "namedReference": "Rubin Naiman",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, with warm, inviting l"
@@ -2065,7 +2065,7 @@
     "readingTime": 10,
     "openerType": "provocation",
     "conclusionType": "tender",
-    "linkType": "external",
+    "linkType": "product",
     "faqCount": 2,
     "namedReference": "J. Allan Hobson",
     "heroImageDesc": "A vast, luminous library materializes from a swirling nebula of golden light and"
@@ -2103,7 +2103,7 @@
     "readingTime": 10,
     "openerType": "provocation",
     "conclusionType": "challenge",
-    "linkType": "internal",
+    "linkType": "external",
     "faqCount": 2,
     "namedReference": "Deirdre Barrett",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, beckoning the viewer "
@@ -2122,7 +2122,7 @@
     "readingTime": 11,
     "openerType": "first-person",
     "conclusionType": "tender",
-    "linkType": "kalesh",
+    "linkType": "product",
     "faqCount": 3,
     "namedReference": "Amma",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm light o"
@@ -2141,7 +2141,7 @@
     "readingTime": 10,
     "openerType": "named-reference",
     "conclusionType": "tender",
-    "linkType": "kalesh",
+    "linkType": "internal",
     "faqCount": 4,
     "namedReference": "Deirdre Barrett",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm light i"
@@ -2160,7 +2160,7 @@
     "readingTime": 11,
     "openerType": "question",
     "conclusionType": "tender",
-    "linkType": "external",
+    "linkType": "product",
     "faqCount": 3,
     "namedReference": "Vedantic dream states",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, revealing a tranquil "
@@ -2179,7 +2179,7 @@
     "readingTime": 10,
     "openerType": "question",
     "conclusionType": "challenge",
-    "linkType": "external",
+    "linkType": "kalesh",
     "faqCount": 3,
     "namedReference": "Stephen LaBerge",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm light i"
@@ -2217,7 +2217,7 @@
     "readingTime": 10,
     "openerType": "named-reference",
     "conclusionType": "tender",
-    "linkType": "kalesh",
+    "linkType": "product",
     "faqCount": 3,
     "namedReference": "Tore Nielsen",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm, inviti"
@@ -2274,7 +2274,7 @@
     "readingTime": 10,
     "openerType": "gut-punch",
     "conclusionType": "tender",
-    "linkType": "external",
+    "linkType": "product",
     "faqCount": 4,
     "namedReference": "Matthew Walker",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm, inviti"
@@ -2312,7 +2312,7 @@
     "readingTime": 11,
     "openerType": "scene-setting",
     "conclusionType": "tender",
-    "linkType": "internal",
+    "linkType": "product",
     "faqCount": 0,
     "namedReference": "Rubin Naiman",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, inviting the viewer t"
@@ -2331,7 +2331,7 @@
     "readingTime": 10,
     "openerType": "first-person",
     "conclusionType": "tender",
-    "linkType": "external",
+    "linkType": "kalesh",
     "faqCount": 3,
     "namedReference": "Stephen LaBerge",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm light i"
@@ -2350,7 +2350,7 @@
     "readingTime": 10,
     "openerType": "provocation",
     "conclusionType": "tender",
-    "linkType": "kalesh",
+    "linkType": "external",
     "faqCount": 2,
     "namedReference": "Deirdre Barrett",
     "heroImageDesc": "A luminous golden doorway stands open against a vast and starry sky, spilling wa"
@@ -2369,7 +2369,7 @@
     "readingTime": 10,
     "openerType": "gut-punch",
     "conclusionType": "tender",
-    "linkType": "kalesh",
+    "linkType": "product",
     "faqCount": 5,
     "namedReference": "Stephen LaBerge",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, with nebulae of warm "
@@ -2407,7 +2407,7 @@
     "readingTime": 10,
     "openerType": "scene-setting",
     "conclusionType": "challenge",
-    "linkType": "internal",
+    "linkType": "external",
     "faqCount": 0,
     "namedReference": "Stanislav Grof",
     "heroImageDesc": "A luminous, golden doorway stands open in a vast and starry dreamscape. The warm"
@@ -2445,7 +2445,7 @@
     "readingTime": 10,
     "openerType": "provocation",
     "conclusionType": "tender",
-    "linkType": "kalesh",
+    "linkType": "internal",
     "faqCount": 2,
     "namedReference": "Rubin Naiman",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, beckoning the viewer "
@@ -2464,7 +2464,7 @@
     "readingTime": 11,
     "openerType": "question",
     "conclusionType": "tender",
-    "linkType": "external",
+    "linkType": "product",
     "faqCount": 3,
     "namedReference": "Carl Jung",
     "heroImageDesc": "A luminous, golden doorway stands open against a vast and starry sky, beckoning "
@@ -2483,7 +2483,7 @@
     "readingTime": 5,
     "openerType": "named-reference",
     "conclusionType": "challenge",
-    "linkType": "external",
+    "linkType": "internal",
     "faqCount": 4,
     "namedReference": "Ramana Maharshi",
     "heroImageDesc": "A radiant golden doorway stands open, casting a warm, inviting glow that spills "
@@ -2502,7 +2502,7 @@
     "readingTime": 10,
     "openerType": "scene-setting",
     "conclusionType": "tender",
-    "linkType": "internal",
+    "linkType": "external",
     "faqCount": 0,
     "namedReference": "Rubin Naiman",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm, inviti"
@@ -2521,7 +2521,7 @@
     "readingTime": 11,
     "openerType": "gut-punch",
     "conclusionType": "tender",
-    "linkType": "internal",
+    "linkType": "product",
     "faqCount": 5,
     "namedReference": "Rubin Naiman",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm, inviti"
@@ -2540,7 +2540,7 @@
     "readingTime": 10,
     "openerType": "provocation",
     "conclusionType": "tender",
-    "linkType": "external",
+    "linkType": "internal",
     "faqCount": 2,
     "namedReference": "Stanislav Grof",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm light i"
@@ -2559,7 +2559,7 @@
     "readingTime": 10,
     "openerType": "gut-punch",
     "conclusionType": "tender",
-    "linkType": "external",
+    "linkType": "product",
     "faqCount": 4,
     "namedReference": "Carl Jung",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm light i"
@@ -2578,7 +2578,7 @@
     "readingTime": 10,
     "openerType": "named-reference",
     "conclusionType": "challenge",
-    "linkType": "external",
+    "linkType": "kalesh",
     "faqCount": 4,
     "namedReference": "Stephen LaBerge",
     "heroImageDesc": "A luminous golden doorway stands open against a vast, star-filled sky, inviting "
@@ -2597,7 +2597,7 @@
     "readingTime": 11,
     "openerType": "named-reference",
     "conclusionType": "challenge",
-    "linkType": "internal",
+    "linkType": "external",
     "faqCount": 4,
     "namedReference": "J. Allan Hobson",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm light i"
@@ -2616,7 +2616,7 @@
     "readingTime": 10,
     "openerType": "provocation",
     "conclusionType": "tender",
-    "linkType": "external",
+    "linkType": "product",
     "faqCount": 2,
     "namedReference": "Amma",
     "heroImageDesc": "A luminous, golden doorway stands open against a vast and beautiful starfield, b"
@@ -2673,7 +2673,7 @@
     "readingTime": 10,
     "openerType": "gut-punch",
     "conclusionType": "tender",
-    "linkType": "internal",
+    "linkType": "product",
     "faqCount": 4,
     "namedReference": "Stephen LaBerge",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, beckoning the dreamer"
@@ -2711,7 +2711,7 @@
     "readingTime": 11,
     "openerType": "scene-setting",
     "conclusionType": "challenge",
-    "linkType": "internal",
+    "linkType": "product",
     "faqCount": 0,
     "namedReference": "Matthew Walker",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm, inviti"
@@ -2749,7 +2749,7 @@
     "readingTime": 11,
     "openerType": "scene-setting",
     "conclusionType": "tender",
-    "linkType": "internal",
+    "linkType": "external",
     "faqCount": 2,
     "namedReference": "Tore Nielsen",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm, inviti"
@@ -2768,7 +2768,7 @@
     "readingTime": 11,
     "openerType": "first-person",
     "conclusionType": "challenge",
-    "linkType": "external",
+    "linkType": "product",
     "faqCount": 3,
     "namedReference": "Amma",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm light i"
@@ -2806,7 +2806,7 @@
     "readingTime": 11,
     "openerType": "scene-setting",
     "conclusionType": "challenge",
-    "linkType": "kalesh",
+    "linkType": "product",
     "faqCount": 0,
     "namedReference": "Stephen LaBerge",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm, inviti"
@@ -2825,7 +2825,7 @@
     "readingTime": 10,
     "openerType": "named-reference",
     "conclusionType": "challenge",
-    "linkType": "external",
+    "linkType": "kalesh",
     "faqCount": 4,
     "namedReference": "Carl Jung",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, beckoning the viewer "
@@ -2844,7 +2844,7 @@
     "readingTime": 10,
     "openerType": "question",
     "conclusionType": "challenge",
-    "linkType": "kalesh",
+    "linkType": "internal",
     "faqCount": 3,
     "namedReference": "Ramana Maharshi",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm, inviti"
@@ -2863,7 +2863,7 @@
     "readingTime": 10,
     "openerType": "gut-punch",
     "conclusionType": "challenge",
-    "linkType": "internal",
+    "linkType": "product",
     "faqCount": 5,
     "namedReference": "Ramana Maharshi",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm light i"
@@ -2882,7 +2882,7 @@
     "readingTime": 10,
     "openerType": "provocation",
     "conclusionType": "tender",
-    "linkType": "external",
+    "linkType": "internal",
     "faqCount": 2,
     "namedReference": "Carl Jung",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, inviting entry into a"
@@ -2901,7 +2901,7 @@
     "readingTime": 10,
     "openerType": "named-reference",
     "conclusionType": "challenge",
-    "linkType": "internal",
+    "linkType": "external",
     "faqCount": 4,
     "namedReference": "J. Allan Hobson",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm light i"
@@ -2920,7 +2920,7 @@
     "readingTime": 10,
     "openerType": "provocation",
     "conclusionType": "tender",
-    "linkType": "internal",
+    "linkType": "product",
     "faqCount": 2,
     "namedReference": "Matthew Walker",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, with swirling nebulae"
@@ -2939,7 +2939,7 @@
     "readingTime": 9,
     "openerType": "named-reference",
     "conclusionType": "tender",
-    "linkType": "kalesh",
+    "linkType": "internal",
     "faqCount": 3,
     "namedReference": "Stephen LaBerge",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm, inviti"
@@ -2958,7 +2958,7 @@
     "readingTime": 4,
     "openerType": "question",
     "conclusionType": "tender",
-    "linkType": "internal",
+    "linkType": "product",
     "faqCount": 3,
     "namedReference": "Stephen LaBerge",
     "heroImageDesc": "A luminous golden doorway stands open in a vast, starry dreamscape, radiating a "
@@ -2977,7 +2977,7 @@
     "readingTime": 10,
     "openerType": "scene-setting",
     "conclusionType": "tender",
-    "linkType": "internal",
+    "linkType": "kalesh",
     "faqCount": 0,
     "namedReference": "Stanislav Grof",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm light i"
@@ -3015,7 +3015,7 @@
     "readingTime": 10,
     "openerType": "first-person",
     "conclusionType": "challenge",
-    "linkType": "internal",
+    "linkType": "product",
     "faqCount": 3,
     "namedReference": "Deirdre Barrett",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm, inviti"
@@ -3034,7 +3034,7 @@
     "readingTime": 10,
     "openerType": "provocation",
     "conclusionType": "tender",
-    "linkType": "external",
+    "linkType": "internal",
     "faqCount": 2,
     "namedReference": "Tore Nielsen",
     "heroImageDesc": "A luminous warm dreamscape. A glowing doorway stands open against a backdrop of "
@@ -3072,7 +3072,7 @@
     "readingTime": 8,
     "openerType": "gut-punch",
     "conclusionType": "tender",
-    "linkType": "external",
+    "linkType": "kalesh",
     "faqCount": 5,
     "namedReference": "Ramana Maharshi",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, with shimmering nebul"
@@ -3110,7 +3110,7 @@
     "readingTime": 10,
     "openerType": "gut-punch",
     "conclusionType": "tender",
-    "linkType": "external",
+    "linkType": "product",
     "faqCount": 5,
     "namedReference": "Stanislav Grof",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm, inviti"
@@ -3129,7 +3129,7 @@
     "readingTime": 10,
     "openerType": "provocation",
     "conclusionType": "challenge",
-    "linkType": "kalesh",
+    "linkType": "internal",
     "faqCount": 2,
     "namedReference": "Stephen LaBerge",
     "heroImageDesc": "A luminous, golden doorway stands open against a vast and starry dreamscape. The"
@@ -3167,7 +3167,7 @@
     "readingTime": 10,
     "openerType": "question",
     "conclusionType": "tender",
-    "linkType": "kalesh",
+    "linkType": "product",
     "faqCount": 3,
     "namedReference": "Amma",
     "heroImageDesc": "A luminous, warm dreamscape unfolds, with a soft golden light emanating from a c"
@@ -3186,7 +3186,7 @@
     "readingTime": 11,
     "openerType": "first-person",
     "conclusionType": "challenge",
-    "linkType": "external",
+    "linkType": "internal",
     "faqCount": 2,
     "namedReference": "Rubin Naiman",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm, inviti"
@@ -3205,7 +3205,7 @@
     "readingTime": 11,
     "openerType": "gut-punch",
     "conclusionType": "tender",
-    "linkType": "kalesh",
+    "linkType": "product",
     "faqCount": 4,
     "namedReference": "Carl Jung",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm light i"
@@ -3224,7 +3224,7 @@
     "readingTime": 10,
     "openerType": "question",
     "conclusionType": "challenge",
-    "linkType": "external",
+    "linkType": "kalesh",
     "faqCount": 3,
     "namedReference": "Stanislav Grof",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm, inviti"
@@ -3243,7 +3243,7 @@
     "readingTime": 9,
     "openerType": "scene-setting",
     "conclusionType": "tender",
-    "linkType": "kalesh",
+    "linkType": "external",
     "faqCount": 2,
     "namedReference": "Carl Jung",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, with warm, inviting l"
@@ -3262,7 +3262,7 @@
     "readingTime": 11,
     "openerType": "scene-setting",
     "conclusionType": "tender",
-    "linkType": "external",
+    "linkType": "product",
     "faqCount": 0,
     "namedReference": "J. Allan Hobson",
     "heroImageDesc": "A luminous, golden doorway stands open against a vast and starry sky, radiating "
@@ -3281,7 +3281,7 @@
     "readingTime": 10,
     "openerType": "gut-punch",
     "conclusionType": "challenge",
-    "linkType": "external",
+    "linkType": "internal",
     "faqCount": 5,
     "namedReference": "Ramana Maharshi",
     "heroImageDesc": "A luminous, golden doorway radiates warmth and invites entry. Beyond the thresho"
@@ -3319,7 +3319,7 @@
     "readingTime": 8,
     "openerType": "first-person",
     "conclusionType": "tender",
-    "linkType": "external",
+    "linkType": "product",
     "faqCount": 3,
     "namedReference": "Vedantic dream states",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, beckoning the viewer "
@@ -3357,7 +3357,7 @@
     "readingTime": 10,
     "openerType": "question",
     "conclusionType": "challenge",
-    "linkType": "internal",
+    "linkType": "product",
     "faqCount": 3,
     "namedReference": "Rubin Naiman",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm light o"
@@ -3376,7 +3376,7 @@
     "readingTime": 11,
     "openerType": "named-reference",
     "conclusionType": "challenge",
-    "linkType": "external",
+    "linkType": "kalesh",
     "faqCount": 4,
     "namedReference": "Rubin Naiman",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm light i"
@@ -3395,7 +3395,7 @@
     "readingTime": 10,
     "openerType": "provocation",
     "conclusionType": "tender",
-    "linkType": "kalesh",
+    "linkType": "external",
     "faqCount": 2,
     "namedReference": "Stephen LaBerge",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm light o"
@@ -3414,7 +3414,7 @@
     "readingTime": 11,
     "openerType": "named-reference",
     "conclusionType": "tender",
-    "linkType": "kalesh",
+    "linkType": "product",
     "faqCount": 3,
     "namedReference": "Deirdre Barrett",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, beckoning a lone trav"
@@ -3471,7 +3471,7 @@
     "readingTime": 11,
     "openerType": "first-person",
     "conclusionType": "tender",
-    "linkType": "internal",
+    "linkType": "kalesh",
     "faqCount": 3,
     "namedReference": "Amma",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm light i"
@@ -3509,7 +3509,7 @@
     "readingTime": 10,
     "openerType": "first-person",
     "conclusionType": "challenge",
-    "linkType": "internal",
+    "linkType": "product",
     "faqCount": 3,
     "namedReference": "Deirdre Barrett",
     "heroImageDesc": "A luminous, golden doorway hovers in a vast, star-filled cosmos, radiating a war"
@@ -3528,7 +3528,7 @@
     "readingTime": 10,
     "openerType": "first-person",
     "conclusionType": "challenge",
-    "linkType": "external",
+    "linkType": "internal",
     "faqCount": 3,
     "namedReference": "J. Allan Hobson",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm, inviti"
@@ -3547,7 +3547,7 @@
     "readingTime": 10,
     "openerType": "gut-punch",
     "conclusionType": "tender",
-    "linkType": "kalesh",
+    "linkType": "external",
     "faqCount": 4,
     "namedReference": "Carl Jung",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, beckoning the viewer "
@@ -3566,7 +3566,7 @@
     "readingTime": 10,
     "openerType": "scene-setting",
     "conclusionType": "challenge",
-    "linkType": "kalesh",
+    "linkType": "product",
     "faqCount": 2,
     "namedReference": "Stephen LaBerge",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm light o"
@@ -3585,7 +3585,7 @@
     "readingTime": 10,
     "openerType": "provocation",
     "conclusionType": "tender",
-    "linkType": "kalesh",
+    "linkType": "internal",
     "faqCount": 2,
     "namedReference": "Deirdre Barrett",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, beckoning the viewer "
@@ -3604,7 +3604,7 @@
     "readingTime": 10,
     "openerType": "scene-setting",
     "conclusionType": "challenge",
-    "linkType": "external",
+    "linkType": "product",
     "faqCount": 2,
     "namedReference": "Rubin Naiman",
     "heroImageDesc": "A luminous, warm dreamscape unfolds with a soft, golden light emanating from an "
@@ -3642,7 +3642,7 @@
     "readingTime": 10,
     "openerType": "question",
     "conclusionType": "tender",
-    "linkType": "kalesh",
+    "linkType": "external",
     "faqCount": 3,
     "namedReference": "Deirdre Barrett",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm, inviti"
@@ -3661,7 +3661,7 @@
     "readingTime": 10,
     "openerType": "gut-punch",
     "conclusionType": "tender",
-    "linkType": "internal",
+    "linkType": "product",
     "faqCount": 5,
     "namedReference": "Deirdre Barrett",
     "heroImageDesc": "A luminous, golden doorway stands open in a vast starfield, beckoning the viewer"
@@ -3680,7 +3680,7 @@
     "readingTime": 10,
     "openerType": "first-person",
     "conclusionType": "challenge",
-    "linkType": "external",
+    "linkType": "internal",
     "faqCount": 3,
     "namedReference": "Carl Jung",
     "heroImageDesc": "A luminous, golden doorway stands open against a vast and starry night sky, beck"
@@ -3737,7 +3737,7 @@
     "readingTime": 10,
     "openerType": "named-reference",
     "conclusionType": "tender",
-    "linkType": "kalesh",
+    "linkType": "internal",
     "faqCount": 3,
     "namedReference": "Matthew Walker",
     "heroImageDesc": "A luminous, golden doorway stands open against a vast and beautiful starfield, b"
@@ -3756,7 +3756,7 @@
     "readingTime": 10,
     "openerType": "gut-punch",
     "conclusionType": "tender",
-    "linkType": "external",
+    "linkType": "product",
     "faqCount": 4,
     "namedReference": "Amma",
     "heroImageDesc": "A luminous, warm, golden doorway stands open against a vast and beautiful starfi"
@@ -3775,7 +3775,7 @@
     "readingTime": 11,
     "openerType": "first-person",
     "conclusionType": "tender",
-    "linkType": "external",
+    "linkType": "internal",
     "faqCount": 3,
     "namedReference": "Stephen LaBerge",
     "heroImageDesc": "A luminous golden doorway stands open against a vast and beautiful starfield, sp"
@@ -3813,7 +3813,7 @@
     "readingTime": 11,
     "openerType": "gut-punch",
     "conclusionType": "challenge",
-    "linkType": "internal",
+    "linkType": "product",
     "faqCount": 5,
     "namedReference": "Amma",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm, inviti"
@@ -3832,7 +3832,7 @@
     "readingTime": 11,
     "openerType": "gut-punch",
     "conclusionType": "challenge",
-    "linkType": "external",
+    "linkType": "internal",
     "faqCount": 5,
     "namedReference": "Deirdre Barrett",
     "heroImageDesc": "A luminous, warm dreamscape. A glowing doorway stands open in a vast starfield, "
@@ -3851,7 +3851,7 @@
     "readingTime": 8,
     "openerType": "first-person",
     "conclusionType": "challenge",
-    "linkType": "internal",
+    "linkType": "product",
     "faqCount": 2,
     "namedReference": "Stanislav Grof",
     "heroImageDesc": "A luminous, golden doorway stands open against a vast and beautiful starfield, b"
@@ -3870,7 +3870,7 @@
     "readingTime": 9,
     "openerType": "provocation",
     "conclusionType": "challenge",
-    "linkType": "internal",
+    "linkType": "kalesh",
     "faqCount": 2,
     "namedReference": "Tore Nielsen",
     "heroImageDesc": "A luminous, golden doorway stands open against a vast and beautiful starfield. T"
@@ -3908,7 +3908,7 @@
     "readingTime": 11,
     "openerType": "named-reference",
     "conclusionType": "tender",
-    "linkType": "kalesh",
+    "linkType": "product",
     "faqCount": 4,
     "namedReference": "Stephen LaBerge",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, with warm, inviting l"
@@ -3927,7 +3927,7 @@
     "readingTime": 11,
     "openerType": "scene-setting",
     "conclusionType": "challenge",
-    "linkType": "external",
+    "linkType": "internal",
     "faqCount": 0,
     "namedReference": "Tore Nielsen",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm light o"
@@ -3965,7 +3965,7 @@
     "readingTime": 9,
     "openerType": "question",
     "conclusionType": "tender",
-    "linkType": "kalesh",
+    "linkType": "product",
     "faqCount": 3,
     "namedReference": "Rubin Naiman",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, beckoning the dreamer"
@@ -3984,7 +3984,7 @@
     "readingTime": 10,
     "openerType": "provocation",
     "conclusionType": "challenge",
-    "linkType": "external",
+    "linkType": "internal",
     "faqCount": 2,
     "namedReference": "Stanislav Grof",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, emitting a warm, invi"
@@ -4003,7 +4003,7 @@
     "readingTime": 10,
     "openerType": "question",
     "conclusionType": "tender",
-    "linkType": "internal",
+    "linkType": "product",
     "faqCount": 3,
     "namedReference": "Vedantic dream states",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm, inviti"
@@ -4022,7 +4022,7 @@
     "readingTime": 10,
     "openerType": "provocation",
     "conclusionType": "tender",
-    "linkType": "internal",
+    "linkType": "kalesh",
     "faqCount": 2,
     "namedReference": "Stephen LaBerge",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm, inviti"
@@ -4041,7 +4041,7 @@
     "readingTime": 10,
     "openerType": "gut-punch",
     "conclusionType": "tender",
-    "linkType": "internal",
+    "linkType": "external",
     "faqCount": 5,
     "namedReference": "Vedantic dream states",
     "heroImageDesc": "A luminous, golden doorway stands open against a vast and starry cosmos, radiati"
@@ -4060,7 +4060,7 @@
     "readingTime": 11,
     "openerType": "gut-punch",
     "conclusionType": "tender",
-    "linkType": "external",
+    "linkType": "product",
     "faqCount": 4,
     "namedReference": "Vedantic dream states",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm light i"
@@ -4117,7 +4117,7 @@
     "readingTime": 4,
     "openerType": "named-reference",
     "conclusionType": "tender",
-    "linkType": "external",
+    "linkType": "kalesh",
     "faqCount": 4,
     "namedReference": "Ramana Maharshi",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm, inviti"
@@ -4155,7 +4155,7 @@
     "readingTime": 10,
     "openerType": "named-reference",
     "conclusionType": "tender",
-    "linkType": "external",
+    "linkType": "product",
     "faqCount": 4,
     "namedReference": "Stanislav Grof",
     "heroImageDesc": "A luminous, warm dreamscape unfolds, with a soft golden light emanating from a c"
@@ -4174,7 +4174,7 @@
     "readingTime": 5,
     "openerType": "provocation",
     "conclusionType": "tender",
-    "linkType": "external",
+    "linkType": "internal",
     "faqCount": 2,
     "namedReference": "J. Allan Hobson",
     "heroImageDesc": "A luminous, warm, golden doorway stands open against a vast and beautiful starfi"
@@ -4212,7 +4212,7 @@
     "readingTime": 7,
     "openerType": "first-person",
     "conclusionType": "challenge",
-    "linkType": "kalesh",
+    "linkType": "product",
     "faqCount": 3,
     "namedReference": "Rubin Naiman",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, with shimmering nebul"
@@ -4231,7 +4231,7 @@
     "readingTime": 10,
     "openerType": "scene-setting",
     "conclusionType": "tender",
-    "linkType": "external",
+    "linkType": "internal",
     "faqCount": 2,
     "namedReference": "Vedantic dream states",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm light i"
@@ -4250,7 +4250,7 @@
     "readingTime": 10,
     "openerType": "named-reference",
     "conclusionType": "tender",
-    "linkType": "kalesh",
+    "linkType": "product",
     "faqCount": 4,
     "namedReference": "Vedantic dream states",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm, inviti"
@@ -4269,7 +4269,7 @@
     "readingTime": 11,
     "openerType": "question",
     "conclusionType": "tender",
-    "linkType": "internal",
+    "linkType": "kalesh",
     "faqCount": 3,
     "namedReference": "Tore Nielsen",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, with swirling nebulae"
@@ -4307,7 +4307,7 @@
     "readingTime": 10,
     "openerType": "question",
     "conclusionType": "tender",
-    "linkType": "internal",
+    "linkType": "product",
     "faqCount": 3,
     "namedReference": "Rubin Naiman",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm, inviti"
@@ -4326,7 +4326,7 @@
     "readingTime": 10,
     "openerType": "gut-punch",
     "conclusionType": "challenge",
-    "linkType": "kalesh",
+    "linkType": "internal",
     "faqCount": 5,
     "namedReference": "Tore Nielsen",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, with warm, inviting l"
@@ -4345,7 +4345,7 @@
     "readingTime": 9,
     "openerType": "question",
     "conclusionType": "tender",
-    "linkType": "internal",
+    "linkType": "external",
     "faqCount": 3,
     "namedReference": "Matthew Walker",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm light i"
@@ -4364,7 +4364,7 @@
     "readingTime": 11,
     "openerType": "provocation",
     "conclusionType": "challenge",
-    "linkType": "internal",
+    "linkType": "product",
     "faqCount": 2,
     "namedReference": "Deirdre Barrett",
     "heroImageDesc": "A luminous, warm dreamscape. A glowing doorway stands open against a backdrop of"
@@ -4383,7 +4383,7 @@
     "readingTime": 11,
     "openerType": "question",
     "conclusionType": "tender",
-    "linkType": "kalesh",
+    "linkType": "internal",
     "faqCount": 3,
     "namedReference": "Deirdre Barrett",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm, inviti"
@@ -4402,7 +4402,7 @@
     "readingTime": 10,
     "openerType": "provocation",
     "conclusionType": "tender",
-    "linkType": "external",
+    "linkType": "product",
     "faqCount": 2,
     "namedReference": "Tore Nielsen",
     "heroImageDesc": "A luminous golden doorway stands open against a vast and beautiful starfield. Th"
@@ -4421,7 +4421,7 @@
     "readingTime": 9,
     "openerType": "provocation",
     "conclusionType": "challenge",
-    "linkType": "external",
+    "linkType": "kalesh",
     "faqCount": 2,
     "namedReference": "Rubin Naiman",
     "heroImageDesc": "A luminous, golden doorway stands open in a vast and starry dreamscape, beckonin"
@@ -4440,7 +4440,7 @@
     "readingTime": 11,
     "openerType": "provocation",
     "conclusionType": "tender",
-    "linkType": "internal",
+    "linkType": "external",
     "faqCount": 2,
     "namedReference": "Stephen LaBerge",
     "heroImageDesc": "A luminous, warm dreamscape. A golden doorway stands open against a vast starfie"
@@ -4459,7 +4459,7 @@
     "readingTime": 11,
     "openerType": "scene-setting",
     "conclusionType": "tender",
-    "linkType": "external",
+    "linkType": "product",
     "faqCount": 2,
     "namedReference": "J. Allan Hobson",
     "heroImageDesc": "A luminous, golden doorway stands open against a vast and beautiful starfield, b"
@@ -4478,7 +4478,7 @@
     "readingTime": 11,
     "openerType": "provocation",
     "conclusionType": "challenge",
-    "linkType": "external",
+    "linkType": "internal",
     "faqCount": 2,
     "namedReference": "Carl Jung",
     "heroImageDesc": "A luminous golden doorway stands open against a vast and beautiful starfield, be"
@@ -4497,7 +4497,7 @@
     "readingTime": 8,
     "openerType": "named-reference",
     "conclusionType": "tender",
-    "linkType": "internal",
+    "linkType": "external",
     "faqCount": 4,
     "namedReference": "Ramana Maharshi",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, inviting exploration "
@@ -4516,7 +4516,7 @@
     "readingTime": 10,
     "openerType": "question",
     "conclusionType": "tender",
-    "linkType": "external",
+    "linkType": "kalesh",
     "faqCount": 3,
     "namedReference": "J. Allan Hobson",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm, inviti"
@@ -4535,7 +4535,7 @@
     "readingTime": 10,
     "openerType": "first-person",
     "conclusionType": "tender",
-    "linkType": "kalesh",
+    "linkType": "internal",
     "faqCount": 2,
     "namedReference": "Tore Nielsen",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, inviting the dreamer "
@@ -4554,7 +4554,7 @@
     "readingTime": 9,
     "openerType": "gut-punch",
     "conclusionType": "tender",
-    "linkType": "external",
+    "linkType": "product",
     "faqCount": 5,
     "namedReference": "Tore Nielsen",
     "heroImageDesc": "A luminous, golden doorway stands open in a vast and beautiful starfield, spilli"
@@ -4573,7 +4573,7 @@
     "readingTime": 10,
     "openerType": "provocation",
     "conclusionType": "tender",
-    "linkType": "external",
+    "linkType": "internal",
     "faqCount": 2,
     "namedReference": "Tore Nielsen",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm, inviti"
@@ -4611,7 +4611,7 @@
     "readingTime": 10,
     "openerType": "named-reference",
     "conclusionType": "tender",
-    "linkType": "external",
+    "linkType": "product",
     "faqCount": 4,
     "namedReference": "Amma",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm, inviti"
@@ -4649,7 +4649,7 @@
     "readingTime": 10,
     "openerType": "named-reference",
     "conclusionType": "tender",
-    "linkType": "external",
+    "linkType": "product",
     "faqCount": 4,
     "namedReference": "Deirdre Barrett",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm, inviti"
@@ -4668,7 +4668,7 @@
     "readingTime": 11,
     "openerType": "scene-setting",
     "conclusionType": "tender",
-    "linkType": "external",
+    "linkType": "kalesh",
     "faqCount": 0,
     "namedReference": "Tore Nielsen",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm, inviti"
@@ -4687,7 +4687,7 @@
     "readingTime": 10,
     "openerType": "provocation",
     "conclusionType": "tender",
-    "linkType": "kalesh",
+    "linkType": "external",
     "faqCount": 2,
     "namedReference": "Ramana Maharshi",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, with soft, warm light"
@@ -4706,7 +4706,7 @@
     "readingTime": 10,
     "openerType": "question",
     "conclusionType": "tender",
-    "linkType": "kalesh",
+    "linkType": "product",
     "faqCount": 3,
     "namedReference": "Rubin Naiman",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm, inviti"
@@ -4725,7 +4725,7 @@
     "readingTime": 10,
     "openerType": "provocation",
     "conclusionType": "challenge",
-    "linkType": "external",
+    "linkType": "internal",
     "faqCount": 2,
     "namedReference": "Tore Nielsen",
     "heroImageDesc": "A luminous, golden doorway stands open against a vast and shimmering starfield, "
@@ -4782,7 +4782,7 @@
     "readingTime": 10,
     "openerType": "scene-setting",
     "conclusionType": "challenge",
-    "linkType": "kalesh",
+    "linkType": "internal",
     "faqCount": 0,
     "namedReference": "Matthew Walker",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm light i"
@@ -4801,7 +4801,7 @@
     "readingTime": 10,
     "openerType": "question",
     "conclusionType": "tender",
-    "linkType": "external",
+    "linkType": "product",
     "faqCount": 3,
     "namedReference": "Tore Nielsen",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm light o"
@@ -4858,7 +4858,7 @@
     "readingTime": 10,
     "openerType": "question",
     "conclusionType": "tender",
-    "linkType": "external",
+    "linkType": "product",
     "faqCount": 3,
     "namedReference": "Carl Jung",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, radiating a warm and "
@@ -4896,7 +4896,7 @@
     "readingTime": 11,
     "openerType": "scene-setting",
     "conclusionType": "tender",
-    "linkType": "kalesh",
+    "linkType": "product",
     "faqCount": 2,
     "namedReference": "Tore Nielsen",
     "heroImageDesc": "A luminous, golden doorway stands open against a vast and shimmering starfield. "
@@ -4915,7 +4915,7 @@
     "readingTime": 10,
     "openerType": "question",
     "conclusionType": "tender",
-    "linkType": "internal",
+    "linkType": "kalesh",
     "faqCount": 3,
     "namedReference": "Stephen LaBerge",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm, inviti"
@@ -4953,7 +4953,7 @@
     "readingTime": 10,
     "openerType": "named-reference",
     "conclusionType": "challenge",
-    "linkType": "external",
+    "linkType": "product",
     "faqCount": 4,
     "namedReference": "Amma",
     "heroImageDesc": "A luminous, golden doorway stands open against a backdrop of a vast and brillian"
@@ -4972,7 +4972,7 @@
     "readingTime": 11,
     "openerType": "scene-setting",
     "conclusionType": "tender",
-    "linkType": "external",
+    "linkType": "internal",
     "faqCount": 0,
     "namedReference": "Matthew Walker",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, with soft, warm light"
@@ -5010,7 +5010,7 @@
     "readingTime": 10,
     "openerType": "question",
     "conclusionType": "tender",
-    "linkType": "kalesh",
+    "linkType": "product",
     "faqCount": 3,
     "namedReference": "J. Allan Hobson",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm light i"
@@ -5029,7 +5029,7 @@
     "readingTime": 10,
     "openerType": "question",
     "conclusionType": "tender",
-    "linkType": "external",
+    "linkType": "internal",
     "faqCount": 3,
     "namedReference": "Rubin Naiman",
     "heroImageDesc": "A luminous, golden doorway stands slightly ajar, spilling warm, inviting light i"
@@ -5048,7 +5048,7 @@
     "readingTime": 11,
     "openerType": "scene-setting",
     "conclusionType": "tender",
-    "linkType": "kalesh",
+    "linkType": "product",
     "faqCount": 2,
     "namedReference": "Matthew Walker",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm light o"
@@ -5067,7 +5067,7 @@
     "readingTime": 10,
     "openerType": "question",
     "conclusionType": "challenge",
-    "linkType": "internal",
+    "linkType": "kalesh",
     "faqCount": 3,
     "namedReference": "Amma",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, with swirling nebulae"
@@ -5105,7 +5105,7 @@
     "readingTime": 10,
     "openerType": "gut-punch",
     "conclusionType": "challenge",
-    "linkType": "external",
+    "linkType": "product",
     "faqCount": 5,
     "namedReference": "J. Allan Hobson",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, beckoning the viewer "
@@ -5124,7 +5124,7 @@
     "readingTime": 7,
     "openerType": "question",
     "conclusionType": "tender",
-    "linkType": "kalesh",
+    "linkType": "internal",
     "faqCount": 3,
     "namedReference": "Ramana Maharshi",
     "heroImageDesc": "A luminous, golden doorway stands open against a vast and beautiful starfield, b"
@@ -5162,7 +5162,7 @@
     "readingTime": 10,
     "openerType": "provocation",
     "conclusionType": "challenge",
-    "linkType": "external",
+    "linkType": "kalesh",
     "faqCount": 2,
     "namedReference": "Rubin Naiman",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm, inviti"
@@ -5181,7 +5181,7 @@
     "readingTime": 6,
     "openerType": "gut-punch",
     "conclusionType": "challenge",
-    "linkType": "kalesh",
+    "linkType": "internal",
     "faqCount": 5,
     "namedReference": "Ramana Maharshi",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm, inviti"
@@ -5200,7 +5200,7 @@
     "readingTime": 11,
     "openerType": "question",
     "conclusionType": "challenge",
-    "linkType": "external",
+    "linkType": "product",
     "faqCount": 3,
     "namedReference": "Carl Jung",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm, inviti"
@@ -5257,7 +5257,7 @@
     "readingTime": 10,
     "openerType": "scene-setting",
     "conclusionType": "tender",
-    "linkType": "external",
+    "linkType": "product",
     "faqCount": 0,
     "namedReference": "Vedantic dream states",
     "heroImageDesc": "A luminous warm dreamscape. A glowing doorway stands open against a backdrop of "
@@ -5295,7 +5295,7 @@
     "readingTime": 10,
     "openerType": "named-reference",
     "conclusionType": "tender",
-    "linkType": "kalesh",
+    "linkType": "product",
     "faqCount": 4,
     "namedReference": "Vedantic dream states",
     "heroImageDesc": "A luminous, golden doorway stands open against a vast and serene starfield, beck"
@@ -5314,7 +5314,7 @@
     "readingTime": 10,
     "openerType": "first-person",
     "conclusionType": "challenge",
-    "linkType": "external",
+    "linkType": "kalesh",
     "faqCount": 2,
     "namedReference": "Stephen LaBerge",
     "heroImageDesc": "A luminous, golden doorway stands open against a backdrop of a vast and starry c"
@@ -5352,7 +5352,7 @@
     "readingTime": 10,
     "openerType": "gut-punch",
     "conclusionType": "tender",
-    "linkType": "external",
+    "linkType": "product",
     "faqCount": 5,
     "namedReference": "Ramana Maharshi",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm, inviti"
@@ -5371,7 +5371,7 @@
     "readingTime": 10,
     "openerType": "first-person",
     "conclusionType": "tender",
-    "linkType": "kalesh",
+    "linkType": "internal",
     "faqCount": 2,
     "namedReference": "Matthew Walker",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, with soft, warm light"
@@ -5390,7 +5390,7 @@
     "readingTime": 11,
     "openerType": "scene-setting",
     "conclusionType": "tender",
-    "linkType": "internal",
+    "linkType": "external",
     "faqCount": 0,
     "namedReference": "Carl Jung",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, pulsating with a warm"
@@ -5409,7 +5409,7 @@
     "readingTime": 10,
     "openerType": "gut-punch",
     "conclusionType": "tender",
-    "linkType": "external",
+    "linkType": "kalesh",
     "faqCount": 4,
     "namedReference": "Amma",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm, inviti"
@@ -5447,7 +5447,7 @@
     "readingTime": 10,
     "openerType": "first-person",
     "conclusionType": "tender",
-    "linkType": "kalesh",
+    "linkType": "product",
     "faqCount": 2,
     "namedReference": "Vedantic dream states",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, beckoning the viewer "
@@ -5466,7 +5466,7 @@
     "readingTime": 11,
     "openerType": "scene-setting",
     "conclusionType": "tender",
-    "linkType": "external",
+    "linkType": "internal",
     "faqCount": 2,
     "namedReference": "J. Allan Hobson",
     "heroImageDesc": "A luminous golden doorway stands open against a vast and shimmering starfield, b"
@@ -5485,7 +5485,7 @@
     "readingTime": 10,
     "openerType": "scene-setting",
     "conclusionType": "tender",
-    "linkType": "internal",
+    "linkType": "external",
     "faqCount": 0,
     "namedReference": "Ramana Maharshi",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm light o"
@@ -5504,7 +5504,7 @@
     "readingTime": 10,
     "openerType": "scene-setting",
     "conclusionType": "tender",
-    "linkType": "internal",
+    "linkType": "product",
     "faqCount": 0,
     "namedReference": "Amma",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, with intricate geomet"
@@ -5523,7 +5523,7 @@
     "readingTime": 11,
     "openerType": "named-reference",
     "conclusionType": "challenge",
-    "linkType": "kalesh",
+    "linkType": "internal",
     "faqCount": 4,
     "namedReference": "Deirdre Barrett",
     "heroImageDesc": "A radiant, ethereal dreamscape glows with soft, warm light, illuminating swirlin"
@@ -5542,7 +5542,7 @@
     "readingTime": 10,
     "openerType": "scene-setting",
     "conclusionType": "tender",
-    "linkType": "internal",
+    "linkType": "product",
     "faqCount": 2,
     "namedReference": "Stanislav Grof",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm, inviti"
@@ -5580,7 +5580,7 @@
     "readingTime": 10,
     "openerType": "provocation",
     "conclusionType": "tender",
-    "linkType": "external",
+    "linkType": "internal",
     "faqCount": 2,
     "namedReference": "J. Allan Hobson",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm light i"
@@ -5599,7 +5599,7 @@
     "readingTime": 10,
     "openerType": "provocation",
     "conclusionType": "tender",
-    "linkType": "kalesh",
+    "linkType": "product",
     "faqCount": 2,
     "namedReference": "Vedantic dream states",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm, inviti"
@@ -5637,7 +5637,7 @@
     "readingTime": 11,
     "openerType": "first-person",
     "conclusionType": "tender",
-    "linkType": "kalesh",
+    "linkType": "external",
     "faqCount": 3,
     "namedReference": "Deirdre Barrett",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, beckoning the viewer "
@@ -5656,7 +5656,7 @@
     "readingTime": 9,
     "openerType": "first-person",
     "conclusionType": "tender",
-    "linkType": "kalesh",
+    "linkType": "product",
     "faqCount": 3,
     "namedReference": "J. Allan Hobson",
     "heroImageDesc": "A luminous golden doorway stands open in a vast starfield, spilling warm, inviti"
@@ -5675,7 +5675,7 @@
     "readingTime": 10,
     "openerType": "scene-setting",
     "conclusionType": "tender",
-    "linkType": "kalesh",
+    "linkType": "internal",
     "faqCount": 0,
     "namedReference": "Deirdre Barrett",
     "heroImageDesc": "A luminous golden doorway stands open against a vast starfield, spilling warm, i"
@@ -5694,9 +5694,66 @@
     "readingTime": 10,
     "openerType": "provocation",
     "conclusionType": "tender",
-    "linkType": "kalesh",
+    "linkType": "product",
     "faqCount": 2,
     "namedReference": "J. Allan Hobson",
     "heroImageDesc": "A luminous, golden doorway stands slightly ajar in a field of brilliant stars, s"
+  },
+  {
+    "id": 301,
+    "title": "Why Every Dream Worker Needs a Proper Journal",
+    "slug": "best-dream-journal-review",
+    "category": "the-practice",
+    "categoryName": "The Practice",
+    "dateISO": "2026-03-29T06:00:00.000Z",
+    "isLive": true,
+    "heroAlt": "A leather-bound journal open on a nightstand beside a warm lamp",
+    "metaDescription": "An honest review of the best dream journals for serious practitioners. Why the right notebook changes everything about your dream recall.",
+    "wordCount": 1400,
+    "readingTime": 7,
+    "openerType": "personal-anecdote",
+    "conclusionType": "call-to-practice",
+    "linkType": "product",
+    "faqCount": 3,
+    "namedReference": "Robert A. Johnson",
+    "heroImageDesc": "leather journal on nightstand"
+  },
+  {
+    "id": 302,
+    "title": "The Sleep Environment That Unlocks Deeper Dreams",
+    "slug": "sleep-environment-dream-tools-review",
+    "category": "the-patterns",
+    "categoryName": "The Patterns",
+    "dateISO": "2026-03-30T06:00:00.000Z",
+    "isLive": true,
+    "heroAlt": "A serene bedroom with dim lighting, a diffuser, and a weighted blanket",
+    "metaDescription": "Honest reviews of sleep tools that actually improve dream quality — from weighted blankets to white noise machines to aromatherapy diffusers.",
+    "wordCount": 1500,
+    "readingTime": 7,
+    "openerType": "direct-teaching",
+    "conclusionType": "integration-prompt",
+    "linkType": "product",
+    "faqCount": 3,
+    "namedReference": "Matthew Walker",
+    "heroImageDesc": "serene bedroom with dim lighting"
+  },
+  {
+    "id": 303,
+    "title": "The Books That Actually Changed How I Work With Dreams",
+    "slug": "essential-dream-books-review",
+    "category": "the-language",
+    "categoryName": "The Language",
+    "dateISO": "2026-03-31T06:00:00.000Z",
+    "isLive": true,
+    "heroAlt": "A stack of well-worn books on a wooden desk beside a cup of tea",
+    "metaDescription": "An honest review of the most important books on dream work — from Jung to LaBerge to Walker. Which ones are worth your time and which you can skip.",
+    "wordCount": 1600,
+    "readingTime": 8,
+    "openerType": "contrarian-hook",
+    "conclusionType": "philosophical-reframe",
+    "linkType": "product",
+    "faqCount": 3,
+    "namedReference": "Carl Jung",
+    "heroImageDesc": "stack of books on wooden desk"
   }
 ]

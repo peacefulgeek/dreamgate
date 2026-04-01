@@ -39,8 +39,7 @@ export default function Terms() {
           </h2>
           <p>
             By subscribing to our newsletter, you consent to receiving periodic emails
-            from Dream Gate. You can unsubscribe at any time. We will never share your
-            email address with third parties.
+            from Dream Gate. You can unsubscribe at any time.
           </p>
 
           <h2 className="font-heading text-xl font-semibold text-foreground mt-8 mb-3">
@@ -59,16 +58,6 @@ export default function Terms() {
           <p>
             We may update these terms from time to time. Continued use of the site after
             changes constitutes acceptance of the updated terms.
-          </p>
-
-          <h2 className="font-heading text-xl font-semibold text-foreground mt-8 mb-3">
-            Contact
-          </h2>
-          <p>
-            For questions about these terms, visit{" "}
-            <a href="https://kalesh.love" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
-              kalesh.love
-            </a>.
           </p>
         </div>
       </div>

@@ -5,9 +5,9 @@
 // ═══════════════════════════════════════════════════════════════
 
 // ─── FEATURE FLAG (stays in code — not a secret) ───
-const AUTO_GEN_ENABLED = false; // Wildman flips to true on GitHub when ready
+const AUTO_GEN_ENABLED = true; // Live — article generation active
 
-// ─── FROM RAILWAY ENV VARS (auto-revoked if found in code) ───
+// ─── FROM RENDER ENV VARS (auto-revoked if found in code) ───
 const ANTHROPIC_API_KEY = process.env.ANTHROPIC_API_KEY;
 const FAL_KEY = process.env.FAL_API_KEY;
 const GH_PAT = process.env.GH_PAT;

@@ -16,6 +16,9 @@ const DreamDecoder = lazy(() => import("@/pages/DreamDecoder"));
 const About = lazy(() => import("@/pages/About"));
 const Privacy = lazy(() => import("@/pages/Privacy"));
 const Terms = lazy(() => import("@/pages/Terms"));
+const ToolsPage = lazy(() => import("@/pages/ToolsPage"));
+const AssessmentsIndex = lazy(() => import("@/pages/AssessmentsIndex"));
+const AssessmentPage = lazy(() => import("@/pages/AssessmentPage"));
 
 function LoadingFallback() {
   return (
@@ -38,6 +41,9 @@ function Router() {
         <Route path="/quizzes" component={QuizIndex} />
         <Route path="/quiz/:slug" component={QuizPage} />
         <Route path="/dream-decoder" component={DreamDecoder} />
+        <Route path="/tools" component={ToolsPage} />
+        <Route path="/assessments" component={AssessmentsIndex} />
+        <Route path="/assessment/:slug" component={AssessmentPage} />
         <Route path="/about" component={About} />
         <Route path="/privacy" component={Privacy} />
         <Route path="/terms" component={Terms} />

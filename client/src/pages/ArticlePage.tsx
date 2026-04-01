@@ -11,6 +11,8 @@ import {
 } from "@/lib/articles";
 import { articleJsonLd, faqJsonLd, breadcrumbJsonLd } from "@/lib/seo";
 
+const KALESH_IMG = "https://dreamgate.b-cdn.net/images/kalesh-bio.webp";
+
 export default function ArticlePage() {
   const { slug } = useParams<{ slug: string }>();
   const [, navigate] = useLocation();
@@ -100,6 +102,9 @@ export default function ArticlePage() {
   const shareFacebook = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(articleUrl)}`;
   const shareLinkedin = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(articleUrl)}`;
 
+  // Check if article body contains Amazon affiliate links
+  const hasAffiliateLinks = article.body.includes("amazon.com/dp/") || article.body.includes("tag=spankyspinola-20");
+
   return (
     <Layout>
       {/* Hero image — full bleed */}
@@ -114,82 +119,171 @@ export default function ArticlePage() {
         />
       </div>
 
-      {/* Article content — single column 720px */}
-      <div className="max-w-[720px] mx-auto px-5 relative">
-        {/* Share buttons — floating left on desktop */}
-        <div className="hidden lg:flex flex-col gap-3 fixed left-[calc(50%-420px)] top-1/3 z-40">
-          <a href={shareTwitter} target="_blank" rel="nofollow noopener" className="text-muted-foreground hover:text-foreground transition-colors text-xs" title="Share on X">𝕏</a>
-          <a href={shareFacebook} target="_blank" rel="nofollow noopener" className="text-muted-foreground hover:text-foreground transition-colors text-xs" title="Share on Facebook">f</a>
-          <a href={shareLinkedin} target="_blank" rel="nofollow noopener" className="text-muted-foreground hover:text-foreground transition-colors text-xs" title="Share on LinkedIn">in</a>
-        </div>
-
-        {/* Breadcrumb */}
-        <nav className="text-sm text-muted-foreground mt-8 mb-4">
-          <Link href="/" className="hover:text-foreground transition-colors no-underline">Home</Link>
-          <span className="mx-2">/</span>
-          <Link href={`/category/${article.category}`} className="hover:text-foreground transition-colors no-underline">{article.categoryName}</Link>
-        </nav>
-
-        {/* Title below hero */}
-        <header className="mb-10">
-          <h1 className="font-heading text-3xl sm:text-4xl font-bold text-foreground leading-tight mb-4">
-            {article.title}
-          </h1>
-          <div className="flex flex-wrap items-center gap-4 text-sm text-muted-foreground">
-            <span>{formatDate(article.dateISO)}</span>
-            <span>&middot;</span>
-            <span>{article.readingTime} min read</span>
+      {/* Two-column layout on desktop: article + sidebar */}
+      <div className="max-w-[960px] mx-auto px-5 relative flex gap-10">
+        {/* Main article column */}
+        <div className="max-w-[720px] flex-1 min-w-0">
+          {/* Share buttons — floating left on desktop */}
+          <div className="hidden xl:flex flex-col gap-3 fixed left-[calc(50%-540px)] top-1/3 z-40">
+            <a href={shareTwitter} target="_blank" rel="nofollow noopener" className="text-muted-foreground hover:text-foreground transition-colors text-xs" title="Share on X">{"\ud835\udd4f"}</a>
+            <a href={shareFacebook} target="_blank" rel="nofollow noopener" className="text-muted-foreground hover:text-foreground transition-colors text-xs" title="Share on Facebook">f</a>
+            <a href={shareLinkedin} target="_blank" rel="nofollow noopener" className="text-muted-foreground hover:text-foreground transition-colors text-xs" title="Share on LinkedIn">in</a>
           </div>
-        </header>
 
-        {/* Article body — body text 20px, line-height 1.8, paragraph spacing 1.5em */}
-        <article
-          className="article-body"
-          style={{ fontSize: "20px", lineHeight: 1.8 }}
-          dangerouslySetInnerHTML={{ __html: article.body }}
-        />
+          {/* Breadcrumb */}
+          <nav className="text-sm text-muted-foreground mt-8 mb-4">
+            <Link href="/" className="hover:text-foreground transition-colors no-underline">Home</Link>
+            <span className="mx-2">/</span>
+            <Link href={`/category/${article.category}`} className="hover:text-foreground transition-colors no-underline">{article.categoryName}</Link>
+          </nav>
 
-        {/* Horizontal rule before bio */}
-        <hr className="my-12 border-border/40" />
+          {/* Title */}
+          <header className="mb-10">
+            <h1 className="font-heading text-3xl sm:text-4xl font-bold text-foreground leading-tight mb-4">
+              {article.title}
+            </h1>
+            <div className="flex flex-wrap items-center gap-4 text-sm text-muted-foreground">
+              <span>{formatDate(article.dateISO)}</span>
+              <span>&middot;</span>
+              <span>{article.readingTime} min read</span>
+            </div>
+          </header>
 
-        {/* Inline author bio — NOT a sidebar card */}
-        <div className="mb-12">
-          <p className="text-base text-foreground leading-relaxed">
-            <strong>About Kalesh</strong> — Kalesh is a consciousness teacher and writer whose work explores the intersection of ancient contemplative traditions and modern neuroscience. With decades of practice in meditation, breathwork, and somatic inquiry, he guides others toward embodied awareness.{" "}
-            <a href="https://kalesh.love" className="text-primary hover:underline">Visit Kalesh's site</a>.
-          </p>
+          {/* Affiliate disclosure — only if article has affiliate links */}
+          {hasAffiliateLinks && (
+            <div className="border border-border/50 rounded-lg bg-card/50 px-4 py-3 mb-8">
+              <p className="text-xs text-muted-foreground">
+                This article contains affiliate links. We may earn a small commission if you make a purchase — at no extra cost to you.
+              </p>
+            </div>
+          )}
+
+          {/* Article body */}
+          <article
+            className="article-body"
+            style={{ fontSize: "20px", lineHeight: 1.8 }}
+            dangerouslySetInnerHTML={{ __html: article.body }}
+          />
+
+          {/* Health Disclaimer */}
+          <div className="border border-amber-500/30 rounded-lg bg-amber-500/5 px-5 py-4 mt-12">
+            <p className="text-sm text-foreground/80 leading-relaxed">
+              <strong className="text-foreground">Educational Content Only.</strong> The information on this site is provided for educational and informational purposes and is not intended as medical, psychological, or professional health advice. Dream interpretation is inherently subjective and should not replace consultation with a qualified healthcare provider. If you are experiencing sleep disorders, psychological distress, or any health concerns, please seek guidance from a licensed professional.
+            </p>
+          </div>
+
+          <hr className="my-12 border-border/40" />
+
+          {/* Author bio card with photo */}
+          <div className="flex items-start gap-5 mb-12 p-5 border border-border/30 rounded-lg bg-card/30">
+            <img
+              src={KALESH_IMG}
+              alt="Kalesh"
+              width={80}
+              height={80}
+              className="rounded-full w-20 h-20 object-cover flex-shrink-0"
+              onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }}
+            />
+            <div>
+              <p className="font-heading font-semibold text-foreground mb-1">Kalesh</p>
+              <p className="text-sm text-muted-foreground leading-relaxed mb-3">
+                Kalesh is a consciousness teacher and writer whose work explores the intersection of ancient contemplative traditions and modern neuroscience. With decades of practice in meditation, breathwork, and somatic inquiry, he guides others toward embodied awareness.
+              </p>
+              <a
+                href="https://kalesh.love"
+                target="_blank"
+                rel="noopener"
+                className="inline-block text-sm font-medium text-primary hover:text-primary/80 transition-colors no-underline"
+              >
+                Visit Kalesh's Website &rarr;
+              </a>
+            </div>
+          </div>
+
+          {/* Tools recommendation link */}
+          <div className="mb-12 text-sm">
+            <Link href="/tools" className="text-muted-foreground hover:text-primary transition-colors no-underline">
+              Browse our recommended tools for dream work &rarr;
+            </Link>
+          </div>
+
+          {/* Related articles */}
+          {related.length > 0 && (
+            <section className="mb-12">
+              <h2 className="font-heading text-lg font-semibold text-foreground mb-4">
+                More from {article.categoryName}
+              </h2>
+              <ul className="space-y-3">
+                {related.map((r) => (
+                  <li key={r.id}>
+                    <Link href={`/article/${r.slug}`} className="text-base text-foreground hover:text-primary transition-colors no-underline">
+                      {r.title}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )}
+
+          {/* Newsletter */}
+          <div className="mb-16">
+            <NewsletterSignup source={`article-${article.slug}`} variant="inline" />
+          </div>
+
+          {/* Share buttons — bottom on mobile */}
+          <div className="xl:hidden flex items-center gap-4 mb-12 text-sm">
+            <span className="text-muted-foreground">Share:</span>
+            <a href={shareTwitter} target="_blank" rel="nofollow noopener" className="text-muted-foreground hover:text-foreground transition-colors no-underline">{"\ud835\udd4f"}</a>
+            <a href={shareFacebook} target="_blank" rel="nofollow noopener" className="text-muted-foreground hover:text-foreground transition-colors no-underline">Facebook</a>
+            <a href={shareLinkedin} target="_blank" rel="nofollow noopener" className="text-muted-foreground hover:text-foreground transition-colors no-underline">LinkedIn</a>
+          </div>
         </div>
 
-        {/* Cross-links: "More from [Category]" — 3 title-only links */}
-        {related.length > 0 && (
-          <section className="mb-12">
-            <h2 className="font-heading text-lg font-semibold text-foreground mb-4">
-              More from {article.categoryName}
-            </h2>
-            <ul className="space-y-3">
-              {related.map((r) => (
-                <li key={r.id}>
-                  <Link href={`/article/${r.slug}`} className="text-base text-foreground hover:text-primary transition-colors no-underline">
-                    {r.title}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </section>
-        )}
+        {/* Sidebar — Kalesh bio card, visible on large screens */}
+        <aside className="hidden lg:block w-[200px] flex-shrink-0 pt-8">
+          <div className="sticky top-8 space-y-6">
+            <div className="border border-border/30 rounded-lg bg-card/30 p-4 text-center">
+              <img
+                src={KALESH_IMG}
+                alt="Kalesh"
+                width={120}
+                height={120}
+                className="rounded-full w-24 h-24 object-cover mx-auto mb-3"
+                onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }}
+              />
+              <p className="font-heading font-semibold text-foreground text-sm mb-1">Kalesh</p>
+              <p className="text-xs text-muted-foreground leading-relaxed mb-3">
+                Mystic and spiritual advisor who brings ancient wisdom and depth to life's biggest decisions.
+              </p>
+              <a
+                href="https://kalesh.love"
+                target="_blank"
+                rel="noopener"
+                className="inline-block w-full text-center text-xs font-medium bg-primary text-primary-foreground rounded-md px-3 py-2 hover:bg-primary/90 transition-colors no-underline"
+              >
+                Visit Kalesh's Website
+              </a>
+            </div>
 
-        {/* Newsletter */}
-        <div className="mb-16">
-          <NewsletterSignup source={`article-${article.slug}`} variant="inline" />
-        </div>
-
-        {/* Share buttons — bottom on mobile */}
-        <div className="lg:hidden flex items-center gap-4 mb-12 text-sm">
-          <span className="text-muted-foreground">Share:</span>
-          <a href={shareTwitter} target="_blank" rel="nofollow noopener" className="text-muted-foreground hover:text-foreground transition-colors no-underline">𝕏</a>
-          <a href={shareFacebook} target="_blank" rel="nofollow noopener" className="text-muted-foreground hover:text-foreground transition-colors no-underline">Facebook</a>
-          <a href={shareLinkedin} target="_blank" rel="nofollow noopener" className="text-muted-foreground hover:text-foreground transition-colors no-underline">LinkedIn</a>
-        </div>
+            <div className="border border-border/30 rounded-lg bg-card/30 p-4">
+              <p className="font-heading font-semibold text-foreground text-xs mb-2">Explore</p>
+              <div className="space-y-2 text-xs">
+                <Link href="/tools" className="block text-muted-foreground hover:text-primary transition-colors no-underline">
+                  Tools We Recommend
+                </Link>
+                <Link href="/quizzes" className="block text-muted-foreground hover:text-primary transition-colors no-underline">
+                  Dream Quizzes
+                </Link>
+                <Link href="/assessments" className="block text-muted-foreground hover:text-primary transition-colors no-underline">
+                  Assessments
+                </Link>
+                <Link href="/dream-decoder" className="block text-muted-foreground hover:text-primary transition-colors no-underline">
+                  Dream Decoder
+                </Link>
+              </div>
+            </div>
+          </div>
+        </aside>
       </div>
     </Layout>
   );

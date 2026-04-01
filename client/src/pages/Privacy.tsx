@@ -55,18 +55,30 @@ export default function Privacy() {
             Your Rights
           </h2>
           <p>
-            You can unsubscribe from our newsletter at any time. If you want your data
-            deleted, contact us and we will remove it within 30 days.
+            You can unsubscribe from our newsletter at any time. Your data will be
+            permanently deleted upon request.
           </p>
 
           <h2 className="font-heading text-xl font-semibold text-foreground mt-8 mb-3">
-            Contact
+            Affiliate Disclosure
           </h2>
           <p>
-            For privacy-related questions, visit{" "}
-            <a href="https://kalesh.love" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
-              kalesh.love
-            </a>.
+            As an Amazon Associate I earn from qualifying purchases.
+          </p>
+          <p>
+            This site is a participant in the Amazon Services LLC Associates Program, an
+            affiliate advertising program designed to provide a means for sites to earn
+            advertising fees by advertising and linking to Amazon.com. Some links on this
+            site are affiliate links, meaning we may earn a small commission at no
+            additional cost to you.
+          </p>
+
+          <h2 className="font-heading text-xl font-semibold text-foreground mt-8 mb-3">
+            Changes to This Policy
+          </h2>
+          <p>
+            We may update this policy from time to time. Continued use of the site after
+            changes constitutes acceptance of the updated policy.
           </p>
         </div>
       </div>
